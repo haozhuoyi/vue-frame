@@ -1,0 +1,135 @@
+@deep: ~">>>";
+
+#group {
+    width: 97%;
+    height: 100%;
+    margin-left: 3%;
+}
+
+/* 头部 */
+.liHead {
+    width: 100%;
+    height: 22px;
+    font-size: 12px;
+    color: #333333;
+    padding-left: 8px;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    box-sizing: border-box;
+
+    &.border {
+        border-bottom: 1px solid #999999;
+    }
+
+    &.li {
+        height: 40px;
+        line-height: 40px;
+        display: inline-block;
+        padding-left: 0;
+        position: relative;
+        flex: 1;
+
+        .backgroundColor {
+            width: 20px;
+            height: 20px;
+            border-radius: 90px;
+            position: absolute;
+            margin: auto;
+            top: 0;
+            bottom: 0;
+            left: 8px;
+            border: 1px solid #707070;
+        }
+
+        span {
+            width: calc(~"100% - 75px");
+            position: relative;
+            font-size: 0.875rem;
+            display: inline-block;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+    }
+
+    &.wo {
+        width: 56px;
+        margin-right: 3.5px;
+        margin-left: 8px;
+        padding-left: 0px;
+    }
+
+    &.wt {
+        width: 48px;
+        margin-right: 4.5px;
+        padding-left: 0px;
+    }
+
+    &.wtr {
+        width: 40px;
+        text-align: center;
+        margin-right: 4px;
+        padding-left: 0px;
+    }
+
+    &.wf {
+        width: 62px;
+        text-align: center;
+        padding-left: 0px;
+    }
+
+    &.wf {
+        width: 100px;
+        text-align: center;
+        padding-left: 0px;
+    }
+}
+
+/* 内容 */
+.ulBody {
+    height: calc(~"100% - 24px");
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin-top: -1px;
+
+    >li {
+        border-bottom: 1px solid #F0F0F0;
+
+        &:focus,
+        &:hover {
+            background-color: #ddeeff;
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, .3);
+            border-bottom: none;
+
+            img {
+                display: block;
+            }
+        }
+
+        &:active {
+            background-color: #ccddee;
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, .3);
+            border-bottom: none;
+
+        }
+
+        &.groupl {
+            background-color: #ccddee;
+
+            &:focus,
+            &:hover,
+            &:active {
+                background-color: #ccddee;
+                box-shadow: 2px 2px 2px rgba(0, 0, 0, .3);
+                border-bottom: none;
+            }
+        }
+
+        .liHead{
+            cursor: default !important;
+        }
+
+    }
+}

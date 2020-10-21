@@ -1,0 +1,197 @@
+@deep: ~">>>";
+@base-url: "../../../../../../assets/images/file";
+
+.c {
+    display: inline-block;
+    width: 20px;
+    height: 15.517px;
+    background: url("@{base-url}/file-tree-icon-12.svg");
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: auto;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    bottom: 0;
+}
+
+.treeContainer {
+    width: 270px;
+    height: 100%;
+    overflow: auto;
+    background-color: #fff;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 20px;
+
+    @{deep} .el-tree>.el-tree-node:after {
+        border-top: none;
+    }
+}
+
+.main {
+    width: calc(~"100% - 300px");
+    height: 100%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#fileTree {
+    width: 100%;
+    height: 100%;
+
+    @{deep} .gutter {
+        background-color: transparent;
+    }
+
+    @{deep} .el-tree {
+        height: 100%;
+        display: inline-block !important;
+    }
+}
+
+.childIcon {
+    .c();
+}
+
+.tree {
+    @{deep} .renderContent {
+        position: relative;
+        width: 100%;
+        line-height: 1.5;
+        margin-left: 0px;
+        cursor: default;
+    }
+
+    @{deep} .childIcon {
+        .c();
+    }
+
+    @{deep} .childLabel {
+        margin-left: 28px;
+        margin-top: 0px;
+        font-size: 0.875rem;
+        display: inline-block;
+        color: #333333;
+        height: 100%;
+        line-height: 28px;
+    }
+
+    @{deep} .el-tree-node__content {
+        height: 31px;
+        position: relative;
+
+        &:focus,
+        &:hover {
+            background-color: #ddeeff;
+        }
+
+        &:active {
+            background-color: #ccddee;
+        }
+    }
+
+    @{deep} span.expanded.el-tree-node__expand-icon.el-icon-caret-right,
+    @{deep} span.el-tree-node__expand-icon.el-icon-caret-right {
+        font-size: 12px;
+        width: 5px;
+        height: 4px;
+        margin-right: 5px;
+    }
+
+    @{deep} .el-tree-node__expand-icon {
+        display: inline-block;
+        background: url("@{base-url}/file-tree-noexpanded-11.svg") no-repeat;
+        z-index: 999;
+        background-size: 100% 100%;
+        background-color: #fff;
+
+        &:before {
+            content: "";
+        }
+
+        &.expanded {
+            background: url("@{base-url}/file-tree-expanded-10.svg") no-repeat;
+            background-color: #fff;
+        }
+    }
+
+    @{deep} .el-tree-node__loading-icon {
+        display: none;
+    }
+
+    @{deep} .is-leaf {
+        display: none;
+    }
+
+    /* 连接线 */
+    @{deep} .el-tree>.el-tree-node {
+        &:after {
+            border-top: none;
+        }
+
+        &:before {
+            border-left: none;
+        }
+    }
+
+    @{deep} .el-tree-node {
+        position: relative;
+        padding: 0 0 0 10px;
+
+        & :last-child:before {
+            height: 41px;
+        }
+
+        &:before {
+            content: "";
+            position: absolute;
+            right: auto;
+            border-width: 1px;
+            border-left: 1px solid #999999;
+            bottom: 0px;
+            height: 100%;
+            top: -26px;
+            width: 1px;
+            left: -9px;
+        }
+
+        &:after {
+            content: "";
+            position: absolute;
+            right: auto;
+            border-width: 1px;
+            border-top: 1px solid #999999;
+            height: 20px;
+            top: 15px;
+            width: 19px;
+            left: -9px;
+        }
+
+        &.is-current.is-focusable>.el-tree-node__content {
+            background-color: #ccddee;
+
+            &:focus,
+            &:hover,
+            &:active {
+                background-color: #ccddee;
+            }
+        }
+    }
+
+    @{deep} .el-tree-node__children {
+        padding-left: 16px;
+    }
+}
+
+/* list */
+.usersAccessible {
+    width: 100%;
+    height: 24px;
+    line-height: 24px;
+    font-size: 14px;
+    color: #999999;
+    padding-left: 21px;
+    box-sizing: border-box;
+}

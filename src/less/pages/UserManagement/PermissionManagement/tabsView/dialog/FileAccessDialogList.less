@@ -1,0 +1,163 @@
+@deep: ~">>>";
+
+#listtabledialog {
+    width: 100%;
+    height: calc(~"100% - 21px");
+}
+
+.listl {
+    background-color: #ccddee;
+}
+
+/* 头部 */
+.liHead {
+    width: calc(~"100% - 372px");
+    height: 22px;
+    font-size: 0.75rem;
+    color: #333333;
+    padding-left: 20px;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    box-sizing: border-box;
+
+    &.border {
+        border-bottom: 1px solid #999999;
+    }
+
+    &.li {
+        height: 40px;
+        line-height: 40px;
+        display: inline-block;
+        position: relative;
+
+        .backgroundColor {
+            width: 20px;
+            height: 20px;
+            border-radius: 90px;
+            position: absolute;
+            margin: auto;
+            top: 0;
+            bottom: 0;
+            left: 8px;
+            border: 1px solid #707070;
+        }
+
+        span {
+            width: calc(100% - 55px);
+            position: relative;
+            font-size: 0.875rem;
+            display: inline-block;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        p {
+            height: 19px;
+            line-height: 19px;
+            position: relative;
+            font-size: 11px;
+            transform: scale(0.92);
+            font-weight: initial;
+        }
+
+        img {
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            margin: auto;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            cursor: pointer;
+        }
+
+        .imgButton {
+            display: inline-block;
+            left: auto;
+        }
+    }
+
+    &.wo {
+        width: 56px;
+        margin-right: 3.5px;
+        margin-left: 8px;
+        padding-left: 8px;
+    }
+
+    &.wt {
+        width: 57px;
+        margin-left: 8px;
+        padding-left: 8px;
+    }
+
+    &.wtr {
+        width: 40px;
+        text-align: center;
+        margin-left: 8px;
+        padding-left: 8px;
+    }
+
+    &.wf {
+        width: 182px;
+        text-align: center;
+        margin-left: 8px;
+        padding-left: 8px;
+    }
+}
+
+/* 内容 */
+.ulBody {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    box-sizing: border-box;
+    position: relative;
+    padding-top: 22px;
+
+    >ul {
+        width: 560px;
+        background-color: #fff;
+        position: absolute;
+        margin: auto;
+        top: 0;
+    }
+
+    >li {
+        // width: 480px;
+        width: 560px;
+        border-bottom: 1px solid #F0F0F0;
+
+        .groupDetails {
+            display: none;
+        }
+
+        .liHead {
+            cursor: default;
+        }
+
+        &:first-child {
+            margin-top: 4px;
+        }
+
+        &:active {
+            background-color: #ccddee;
+        }
+
+        &:focus {
+            background-color: #ddeeff;
+        }
+
+        &:hover {
+            border-bottom: none;
+            background-color: #ddeeff;
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, .3);
+
+            .groupDetails {
+                display: block;
+            }
+        }
+    }
+}

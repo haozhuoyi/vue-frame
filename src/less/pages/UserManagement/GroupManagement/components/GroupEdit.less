@@ -1,0 +1,171 @@
+@deep: ~">>>";
+@height: 100%;
+
+#groupEdit {
+
+    /* body */
+    .eldialog {
+        @{deep} .el-dialog__body {
+            .body {
+                width: @height;
+                height: @height;
+                padding: 16px;
+                box-sizing: border-box;
+                border: 1px solid #999999;
+                border-radius: 2px;
+                display: flex;
+                flex-direction: column;
+
+                .inputSuffix {
+                    width: 360px;
+                    font-size: 12px;
+                    box-sizing: border-box;
+
+                    .label {
+                        display: inline-block;
+                        width: 88px;
+                        text-align: right;
+                    }
+
+                    input {
+                        width: 236px;
+                    }
+                }
+
+                .colorPickerSwitch {
+                    vertical-align: middle;
+
+                    svg {
+                        vertical-align: middle;
+                    }
+                }
+
+                .colorPicker {
+                    width: 320px;
+                    display: flex;
+
+                    .label {
+                        width: 88px;
+                        display: inline-flex;
+                        justify-content: flex-end;
+                        margin-top: 3px;
+                    }
+                }
+            }
+        }
+    }
+
+    @{deep} #colorDivp {
+        width: 232px;
+        height: 201px;
+        box-sizing: border-box;
+        position: absolute;
+        margin: auto;
+        top: 259px;
+        right: 0;
+        bottom: 0;
+        left: 48px;
+        z-index: 9999;
+        border-radius: 0px;
+        background-color: #fff;
+        border: 1px solid #e8e8e8;
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.4);
+
+        .coloring {
+            font-size: 0.875rem;
+            padding: 8px;
+
+            .chooseColor {
+                width: 100%;
+                padding: 8px 0 0 8px;
+
+                p {
+                    span {
+                        width: 24px;
+                        height: 24px;
+                        border-radius: 50%;
+                        display: inline-block;
+                        box-sizing: border-box;
+                        vertical-align: middle;
+                        margin-right: 8px;
+                        cursor: pointer;
+                    }
+
+                    input {
+                        width: 170px;
+                        vertical-align: middle;
+                    }
+
+                    &:first-child {
+                        margin-bottom: 8px;
+                    }
+                }
+            }
+
+            .selectedColor {
+                width: 100%;
+                padding-left: 8px;
+                margin-top: 16px;
+            }
+
+            .coloringColor {
+                width: 24px;
+                height: 24px;
+                padding: 8px;
+                cursor: pointer;
+                position: relative;
+                display: inline-block;
+                vertical-align: middle;
+
+                p,
+                img {
+                    width: 24px;
+                    height: 24px;
+                    border-radius: 50%;
+                    box-sizing: border-box;
+                }
+
+                .picker-color.el-color-picker.el-color-picker--mini {
+                    width: 28px;
+                    height: 28px;
+                    position: absolute;
+                    margin: auto;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    left: 0;
+
+                    .el-color-picker__trigger,
+                    .el-color-picker__color,
+                    .el-color-picker__icon {
+                        border: none;
+                    }
+
+                    .el-color-picker__color-inner {
+                        border-radius: 50%;
+                        width: 14px;
+    height: 14px;
+    margin: auto;
+                    }
+
+                    .el-color-picker__icon {
+                        display: none;
+                    }
+                }
+
+                &:last-child,
+                &:nth-last-child(2) {
+
+                    p,
+                    img {
+                        border: 1px solid black;
+                    }
+                }
+
+                &:hover {
+                    background-color: #ddeeff;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,160 @@
+@deep: ~">>>";
+
+#settingUseCapacity @{deep} .el-dialog {
+    .el-dialog__body {
+        padding-bottom: 16px;
+
+        .transitionBox {
+            .titleMessage {
+                font-size: 0.875rem;
+                text-align: center;
+                margin-bottom: 3px;
+
+                >div {
+                    font-size: 0.875rem;
+                    display: inline-block;
+                }
+            }
+
+            .chart {
+                width: 350px;
+                margin: 0 auto;
+                font-size: 0.875rem;
+
+                .Mbit {
+                    display: inline-block;
+
+                    p {
+                        width: 60px;
+                        font-size: 0.875rem;
+                        font: small-caption;
+                        margin-left: 5px;
+                        text-align: center;
+                    }
+
+                    .capacity {
+                        margin-left: -3px;
+                        font-size: 0.875rem;
+                    }
+                }
+
+                .divChart {
+                    width: 265px;
+                    height: 30px;
+                    border: 1px solid #32465a;
+                    border-radius: 2px;
+                    float: right;
+                    overflow-x: hidden;
+
+                    /* 空きend */
+                    // .ve-bar {
+                    //     margin-left: -18px;
+                    // }
+                }
+            }
+
+            .legend {
+                height: 28px;
+
+                >div {
+                    width: auto;
+                    height: 28px;
+                    float: left;
+                    line-height: 28px;
+                    border-radius: 2px;
+                    background-color: #f0f0f0;
+
+                    >p {
+                        font-size: 0.875rem;
+                        white-space: nowrap;
+                        display: inline-block;
+                        vertical-align: top;
+                    }
+
+                    >div {
+                        width: 14px;
+                        height: 14px;
+                        margin-top: 6px;
+                        margin-left: 4px;
+                        margin-right: 5px;
+                        border-radius: 2px;
+                        display: inline-block;
+                    }
+                }
+
+                /* ファイルstart */
+                .filediv {
+                    margin-top: 1px;
+                    margin-left: 6px;
+
+                    .filelegend {
+                        border: 1px solid #0d6cc4;
+                        background-color: #0d6cc4;
+                    }
+                }
+
+                /* ファイルend */
+                /* 写真start */
+                .picturediv {
+                    margin-top: 1px;
+                    margin-left: 3px;
+
+
+                    .picturelengend {
+                        border: 1px solid #f5de6b;
+                        background-color: #f5de6b;
+                    }
+                }
+
+                /* 写真end */
+                /* スナップショットstart */
+                .snapshotdiv {
+                    margin-top: 1px;
+                    margin-left: 4px;
+
+                    .snapshotlengend {
+                        border: 1px solid #32cc31;
+                        background-color: #32cc31;
+                    }
+                }
+
+                /* スナップショットend */
+
+                /* Excel帳票start */
+                .exceldiv {
+                    margin-top: 1px;
+                    margin-left: 28px;
+
+                    .excellengend {
+                        border: 1px solid #cc315c;
+                        background-color: #cc315c;
+                    }
+                }
+
+                /* Excel帳票end */
+                /* 測定start */
+                .measurediv {
+                    margin-top: 1px;
+                    margin-left: 4px;
+
+                    .measurelengend {
+                        border: 1px solid #06dfd7;
+                        background-color: #06dfd7;
+                    }
+                }
+
+                /* 測定end */
+                /* 空きstart */
+                .remainingCapacitydiv {
+                    margin-top: 1px;
+                    margin-left: 4px;
+
+                    .remainingCapacitylengend {
+                        border: 1px solid #3c3c3c;
+                        background-color: #3c3c3c;
+                    }
+                }
+            }
+        }
+    }
+}

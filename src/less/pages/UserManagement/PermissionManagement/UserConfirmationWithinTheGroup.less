@@ -1,0 +1,112 @@
+@deep: ~">>>";
+
+.userConfirmationWithinTheGroup @{deep} .el-dialog {
+    .el-dialog__body {
+        padding-bottom: 16px;
+
+        .title {
+            width: 200px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            position: relative;
+            padding-left: 20px;
+
+            span {
+                position: absolute;
+                margin: auto;
+                left: 0px;
+                bottom: -24px;
+                font-size: 14px;
+            }
+
+            .backgroundColor {
+                width: 14px;
+                height: 14px;
+                top: 0;
+                bottom: 0;
+                border-radius: 90px;
+                border: 1px solid #707070;
+            }
+        }
+
+        .IndividualSet {
+            margin: 8px 0;
+            color: #0F0D0D;
+        }
+
+        .content {
+            width: 100%;
+            max-width: 500px;
+            height: 188.76px;
+            overflow: hidden;
+            border-radius: 2px;
+            border: 1px solid #999999;
+
+            .row {
+                .el-col {
+                    height: 24px;
+                    line-height: 24px;
+                    color: #333;
+                    margin: 0 4px;
+                    padding-left: 8px;
+                    font-size: 0.75rem;
+                    border-bottom: 1px solid #707070;
+
+                    &:first-child {
+                        margin-left: 0px;
+                    }
+
+                    &:last-child {
+                        width: 47%;
+                        margin-right: 0px;
+                    }
+                }
+            }
+
+            .groupUser {
+                width: 100%;
+                height: calc(~"100% - 24px");
+                overflow: auto;
+
+                .topSpacing {
+                    margin-top: 4px;
+                }
+
+                .el-row {
+                    border-bottom: 1px solid #f0f0f0;
+
+                    .el-col {
+                        height: 40px;
+                        line-height: 40px;
+                        color: #333;
+                        font-size: 0.875rem;
+                        padding-left: 8px;
+                        position: relative;
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+
+                        img {
+                            width: 24px;
+                            height: 24px;
+                            position: absolute;
+                            margin: auto;
+                            top: 0;
+                            bottom: 0;
+                            left: 8px;
+                        }
+                    }
+
+                    .el-col-13 {
+                        padding-left: 26px;
+                    }
+
+                    &:hover {
+                        box-shadow: 2px 2px 2px rgba(0, 0, 0, .3);
+                    }
+                }
+            }
+        }
+    }
+}

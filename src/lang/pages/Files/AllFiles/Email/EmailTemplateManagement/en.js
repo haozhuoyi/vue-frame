@@ -1,0 +1,22 @@
+'use strict'
+
+exports.__esModule = true
+exports.default = {
+    emailTemplateManagement: {
+        DISPLAY_FILE_INFO_SEND_MAIL_EMAIL_TEMPLATES_PUBLIC_TYPE: 'PublicType：',
+        DISPLAY_SELECTING_TEMPLATE_MAIL_VIEWER_BUTTON_ALL_PROJECTS: 'All projects',
+        DISPLAY_SELECTING_TEMPLATE_MAIL_VIEWER_BUTTON_THIS_PROJECT: 'This project',
+        DISPLAY_SELECTING_TEMPLATE_MAIL_VIEWER_BUTTON_ONLY_MYSELF: 'Only myself',
+        DISPLAY_SELECTING_TEMPLATE_MAIL_VIEWER_ADD_TITLE: 'New Mail Template',
+        DISPLAY_SELECTING_TEMPLATE_MAIL_VIEWER_EDIT_TITLE: 'Edit Mail Template',
+        DISPLAY_SELECTING_TEMPLATE_MAIL_MAIL_TITLE: 'Title：',
+        DISPLAY_SELECTING_TEMPLATE_MAIL_MAIL_BODY: 'Body：',
+        DISPLAY_SELECTING_TEMPLATE_MAIL_VIEWER_BUTTON_SAVE1: 'Add',
+        DISPLAY_SELECTING_TEMPLATE_MAIL_VIEWER_BUTTON_SAVE2: 'Update',
+        MESSAGE_CLOSE_EDIT_WINDOW_CONFIRM: 'Discard edit contents and close.\nProceed?',
+        MESSAGE_TITLE_NOT_EXIST: 'Please enter the title.',
+        MESSAGE_PUBLIC_TYPE_NOT_EXIST: 'Please select the public type',
+        MESSAGE_TEMPLATE_MAIL_VIEWER_ADD_SUCCESS: 'Added successfully',
+        MESSAGE_TEMPLATE_MAIL_VIEWER_CHANGE_SUCCESS: 'Update successfully'
+    }
+}

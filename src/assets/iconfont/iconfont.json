@@ -1,0 +1,23 @@
+{
+  "id": "1698465",
+  "name": "chexweb",
+  "font_family": "iconfont",
+  "css_prefix_text": "chex",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1469278",
+      "name": "plus-square-o",
+      "font_class": "plus-square-o",
+      "unicode": "e86c",
+      "unicode_decimal": 59500
+    },
+    {
+      "icon_id": "1469257",
+      "name": "minus-square-o",
+      "font_class": "minus-square-o",
+      "unicode": "e865",
+      "unicode_decimal": 59493
+    }
+  ]
+}

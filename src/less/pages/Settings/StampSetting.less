@@ -1,0 +1,115 @@
+@deep: ~">>>";
+
+.titleButton {
+    width: 570px;
+    height: 28px;
+    padding: 9px 0px;
+    font-size: 12px;
+    line-height: 25px;
+}
+
+.purple @{deep} .el-radio-group {
+    padding-bottom: 4px;
+}
+
+.purple @{deep} .el-radio-button {
+    height: 28px;
+    font-size: 12px;
+    margin-left: -1px;
+}
+
+.purple @{deep} .el-radio-button.is-active .el-radio-button__inner {
+    height: 28px;
+    background-color: #32465a;
+    border-color: #32465a;
+    color: white;
+}
+
+.shortButton @{deep} .el-radio-button__inner {
+    width: 64px;
+    height: 28px;
+}
+
+.longButton @{deep} .el-radio-button__inner {
+    width: 88px;
+    height: 28px;
+}
+
+.purple @{deep} .el-radio-button__inner {
+    font-size: 12px;
+    padding: 7px 0 0 0;
+    border: 1px solid #32465a;
+}
+
+.content {
+    width: 630px;
+    overflow: hidden;
+    background: #e6e6e6;
+}
+
+.purple @{deep} .el-col.el-col-3:hover {
+    background-color: #e6e6e6;
+}
+
+.purple @{deep} .el-col {
+    margin-left: 1.2px;
+    margin-top: 1.1px;
+    width: 68px;
+    height: 64px;
+    position: relative;
+    background-color: white;
+}
+
+.contentSvg @{deep} svg {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    top: 11.25px;
+    left: 11.83px;
+}
+
+.collect {
+    position: absolute;
+    right: 1px;
+    bottom: -3px;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+/* dialog对话框的样式 */
+.stampManagement @{deep} .el-dialog {
+    width: 645px;
+    height: 348px;
+}
+
+.stampManagement @{deep} .el-dialog__title {
+    color: white;
+    font-size: 0.875rem;
+}
+
+.stampManagement @{deep} .el-dialog__header {
+    padding: 4px 50px 4px 10px;
+    background-color: #32465a;
+}
+
+.stampManagement @{deep} .el-row {
+    background-color: #e6e6e6;
+    height: 262px;
+    position: relative;
+    border: 1px solid #000000;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+/* 右上角关闭x的位置 */
+.stampManagement @{deep} .el-dialog__close.el-icon.el-icon-close {
+    width: 16px;
+    height: 16px;
+    font-size: 16px;
+}
+
+.stampManagement @{deep} .el-dialog__body {
+    height: 293px;
+}

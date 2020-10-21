@@ -1,0 +1,123 @@
+@deep: ~">>>";
+
+#listTable {
+    min-width: 180px;
+
+    .listTableBody {
+
+        >:first-child {
+            margin-top: 4px;
+        }
+
+        ul {
+
+            >li {
+                cursor: default;
+            }
+
+            &:focus,
+            &:hover {
+                background-color: #ddeeff;
+                box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3)
+            }
+
+            &:active {
+                background-color: #ccddee;
+                box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3)
+            }
+
+            &.checked,
+            &.nochecked {
+                background-color: #ccddee;
+
+                &:focus,
+                &:hover,
+                &:active {
+                    background-color: #ccddee;
+                    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3)
+                }
+            }
+        }
+    }
+
+    .ul {
+        width: 318px;
+        height: 40px;
+        line-height: 40px;
+        background-color: #fff;
+        border-bottom: 1px solid #f0f0f0;
+
+
+        li {
+            width: 48.5%;
+            box-sizing: border-box;
+            height: 40px;
+            line-height: 40px;
+            float: left;
+            position: relative;
+
+            >span {
+                font-size: 0.875rem;
+                position: absolute;
+                margin: auto;
+                top: 0;
+                bottom: 0;
+                left: 8px;
+                color: #333;
+            }
+        }
+
+        &.th {
+            height: 26px;
+            line-height: 26px;
+
+            li {
+                height: 26px;
+                line-height: 26px;
+
+                >span {
+                    font-size: 0.875rem;
+                    margin: 0;
+                    left: 8px;
+                    color: #333;
+                }
+            }
+        }
+
+        .liName {
+            img {
+                width: 24px;
+                height: 24px;
+                margin: 8px 0 8px 3px;
+            }
+
+            span {
+                width: calc(~"100% - 64px");
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+        }
+
+        .liClass {
+            span {
+                width: calc(~"100% - 5px");
+                margin: 0;
+                left: 10px;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+        }
+    }
+}
+
+.flexColumn {
+    display: flex;
+    flex-direction: column;
+
+    .stretchContent {
+        flex: 1 1 auto;
+        overflow-y: auto;
+    }
+}

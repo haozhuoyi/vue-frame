@@ -1,0 +1,40 @@
+@deep: ~">>>";
+@height: 100%;
+
+#belongingEdit {
+
+    /* body */
+    .eldialog {
+        @{deep} .el-dialog__body {
+            .body {
+                height: 93px;
+                padding: 16px;
+                box-sizing: border-box;
+                border: 1px solid #999999;
+                position: relative;
+
+                .title {
+                    color: #212221;
+                    position: relative;
+                    margin-top: -8px;
+                    font-size: 0.875rem;
+                }
+
+                .inputSuffix {
+                    height: 37px;
+                    font-size: 0.875rem;
+                    position: absolute;
+                    margin: auto;
+                    bottom: 16px;
+                    right: 0;
+                    left: 0;
+                    text-align: center;
+
+                    .el-input {
+                        width: 292px;
+                    }
+                }
+            }
+        }
+    }
+}

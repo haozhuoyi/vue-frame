@@ -1,0 +1,80 @@
+@deep: ~">>>";
+
+#headButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    flex-wrap: wrap;
+
+    .headButton {
+        display: inline-block;
+        text-align: center;
+        position: relative;
+        border: none;
+        background-color: #fff;
+        flex: 0 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-width: 56px;
+        padding: 8px 4px;
+        box-sizing: border-box;
+        cursor: pointer;
+
+        &:hover,
+        &:focus {
+            background-color: #CCDDEE;
+
+            .buttonImage {
+                background-color: #CCDDEE;
+            }
+        }
+
+        &:active {
+            background-color: #ccddee;
+
+            .buttonImage {
+                background-color: #ccddee;
+            }
+        }
+
+        p {
+            white-space: pre-line;
+            line-height: 1.2;
+            font-size: 0.75rem;
+        }
+
+        .buttonImage {
+            width: 24px;
+            height: 24px;
+            vertical-align: middle;
+            text-align: center;
+            background-color: #ffffff;
+            margin: 0;
+            margin-bottom: 4px;
+        }
+
+        @{deep} .el-dropdown {
+            flex: 0 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .el-dropdown-menu {
+                margin: 5px 0;
+                padding: 6px 0;
+
+                .el-dropdown-menu__item {
+                    height: 24px;
+                    line-height: 24px;
+                    padding: 0 11px;
+                    font-size: 12px;
+                }
+            }
+        }
+
+        @{deep} .el-popper[x-placement^=bottom] {
+            margin-top: 5px;
+        }
+    }
+}

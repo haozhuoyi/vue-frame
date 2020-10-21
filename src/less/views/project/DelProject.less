@@ -1,0 +1,24 @@
+@deep: ~">>>";
+
+.deleteProject {
+    @{deep} .el-dialog {
+        .el-dialog__body {
+            padding: 22px 26.6px 16.7px 27.6px;
+        }
+
+        .el-dialog__footer {
+            text-align: right;
+            padding: 0 26.6px 16.3px 0;
+
+            .dialog-footer {
+                button {
+                    margin: 0 10px;
+
+                    &:last-child {
+                        margin: 0 0 0 10px;
+                    }
+                }
+            }
+        }
+    }
+}

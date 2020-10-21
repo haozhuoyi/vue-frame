@@ -1,0 +1,347 @@
+@deep: ~">>>";
+
+.emailListEditDialog @{deep}.el-dialog {
+    width: 880px;
+    height: 100%;
+
+    .largeDialog {
+        width: 880px;
+        height: 100%;
+    }
+}
+
+.emailListEditDialog @{deep} .el-dialog__body {
+    height: 100%;
+    border: 0px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+
+// form様式
+.formContent {
+    margin-bottom: 8px;
+
+    @{deep} .el-form-item {
+        height: 24px;
+        line-height: 24px;
+        margin: 0px;
+
+        .el-form-item__label {
+            padding: 0px;
+            line-height: 24px;
+            font-size: 0.875rem;
+        }
+
+        .el-form-item__content {
+            height: 24px;
+            line-height: 24px;
+
+            &:nth-child(2) {
+                height: calc(~"100% - 28px");
+            }
+
+            .el-radio-button__inner {
+                height: 24px;
+                width: 110px;
+                font-size: 12px;
+                padding: 4px 3px 4px 3px;
+                color: #333333;
+                background-color: #ffffff;
+                border-color: #32465a;
+                box-sizing: border-box;
+                box-shadow: none;
+                opacity: .3;
+            }
+
+            .el-radio-button__orig-radio:checked+.el-radio-button__inner {
+                background-color: #32465a;
+                color: #ffffff;
+            }
+
+            .el-textarea__inner,
+            .el-textarea {
+                width: 100%;
+                height: 100%;
+                box-sizing: border-box;
+            }
+
+            .el-textarea__inner {
+                border: 1px solid #32465a;
+                background-color: #ffffff;
+                padding: 3px;
+                box-sizing: border-box;
+                font-size: 0.875rem;
+                resize: none;
+            }
+        }
+    }
+}
+
+// table様式
+.templateList {
+    // width: 50%;
+    width: 55%;
+    height: 100%
+}
+
+.tableEmailList {
+    width: 98%;
+    height: calc(~"100% - 24px");
+    border: 1px solid #707070;
+    box-sizing: border-box;
+    // border-top: none;
+    margin-top: 24px;
+
+
+    @{deep} .el-table__body-wrapper {
+        height: 100%;
+        position: relative;
+        overflow: hidden auto;
+        cursor: default;
+    }
+}
+
+.emailListEditDialog @{deep} .el-table td {
+    padding: 0;
+    height: 40px;
+    line-height: 40px;
+}
+
+.emailListEditDialog @{deep} .el-table th {
+    padding: 0;
+    height: 24px;
+    line-height: 24px;
+    border-bottom: 1px solid #EBEEF5;
+}
+
+/* Title */
+.emailListEditDialog @{deep} .el-table th>.cell {
+    font-size: 0.875rem;
+    font-weight: 500;
+    margin-bottom: 4px;
+    line-height: 1;
+}
+
+/* row */
+.emailListEditDialog @{deep} .el-table .cell {
+    // width: 190px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.emailListEditDialog @{deep} .el-table__body tr.current-row>td {
+    background-color: #ccddee;
+}
+
+.emailListEditDialog @{deep} .el-table__body tr.current-row:focus>td,
+.emailListEditDialog @{deep} .el-table__body tr.current-row:hover>td {
+    background-color: #ccddee;
+}
+
+.emailListEditDialog @{deep} .el-table__body tr:focus,
+.emailListEditDialog @{deep} .el-table__body tr:hover {
+    td {
+        background-color: #ddeeff;
+
+        &:after,
+        &::after {
+            content: '';
+            width: 100%;
+            height: 1px;
+            font-weight: 500;
+            box-sizing: border-box;
+            // background-color: #707070;
+            // border-bottom: 1px solid #707070;
+            box-shadow: 3px 1px 2px rgba(0, 0, 0, 0.3);
+            position: absolute;
+            margin: auto;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+    }
+}
+
+.emailListEditDialog @{deep} .el-table__body tr:active {
+    td {
+        background-color: #ccddee;
+
+        &:after,
+        &::after {
+            content: '';
+            width: 100%;
+            height: 1px;
+            font-weight: 500;
+            box-sizing: border-box;
+            // background-color: #707070;
+            // border-bottom: 1px solid #707070;
+            box-shadow: 3px 1px 2px rgba(0, 0, 0, 0.3);
+            position: absolute;
+            margin: auto;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+    }
+}
+
+/*自定義様式 */
+.borderBox {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border: 1px solid #999999;
+    box-sizing: border-box;
+    padding: 16px;
+
+    .templateList {
+        @{deep} .el-table__header-wrapper {
+            box-sizing: border-box;
+        }
+    }
+}
+
+.content {
+    height: calc(~"100% - 53px");
+    position: absolute;
+    top: 38px;
+    // right: 16px;
+    left: 56%;
+}
+
+/* 搜索框 */
+.input-search.el-input {
+    width: 98%;
+    margin-bottom: 2px;
+    box-sizing: border-box;
+
+    @{deep} .el-input__inner {
+        padding-left: 30px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+
+    // @{deep} .el-input__prefix img {
+    //     width: 24px;
+    //     height: 24px;
+    //     margin: 6px;
+    // }
+}
+
+.span-template-list-header {
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.header {
+    position: absolute;
+    font-size: 0.75rem;
+    font-weight: 500;
+    top: 16px;
+    left: 24px;
+}
+
+
+.ul {
+    &.ulHeader {
+        div {
+            height: 22px;
+            line-height: 22px;
+            font-size: 0.75rem;
+            display: inline-block;
+            border-bottom: 1px solid #707070;
+            vertical-align: middle;
+            padding-left: 8px;
+            box-sizing: border-box;
+        }
+
+        .belongName {
+            width: 152px;
+        }
+
+        .space {
+            width: 8px;
+            border-bottom: 1px solid transparent;
+        }
+
+        .userName {
+            // width: calc(~"100% - 129px - 16px - 17px");
+            width: 174px;
+        }
+    }
+
+    &.ulBody {
+        width: 100%;
+        height: calc(~"100% - 56px");
+        overflow: hidden auto;
+
+        .topSpacing {
+            margin-top: 4px;
+        }
+
+        >li {
+            border-bottom: 1px solid #F0F0F0;
+            cursor: default;
+
+            &:hover {
+                border-bottom: none;
+                box-shadow: 2px 2px 2px rgba(2, 2, 2, .3);
+            }
+
+            div {
+                height: 47px;
+                line-height: 47px;
+                display: inline-block;
+                box-sizing: border-box;
+                position: relative;
+                vertical-align: middle;
+                padding-left: 8px;
+
+                span {
+                    width: 100%;
+                    height: 23px;
+                    line-height: 23px;
+                    display: block;
+                    font-size: 0.875rem;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                }
+            }
+
+            .belongName {
+                width: 152px;
+                padding-left: 26px;
+                padding-top: 12px;
+
+                img {
+                    position: absolute;
+                    margin: auto;
+                    top: 0;
+                    left: 8px;
+                    bottom: 0;
+                }
+            }
+
+            .space {
+                width: 8px;
+            }
+
+            .userName {
+                // width: calc(~"100% - 129px - 32px - 17px");
+                width: 168px;
+            }
+        }
+    }
+}
+
+
+.footerButtonPosition {
+    text-align: left;
+
+    button {
+        margin-right: 8px;
+    }
+}

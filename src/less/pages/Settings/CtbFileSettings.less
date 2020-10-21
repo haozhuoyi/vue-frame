@@ -1,0 +1,301 @@
+@deep: ~">>>";
+@imgurl: '../../../assets/images/file-upload.png';
+
+/*鼠标右键菜单start*/
+#menu {
+    /* 设置为0 隐藏自定义菜单 */
+    width: 0px;
+    height: 50px;
+    overflow: hidden;
+    box-shadow: 0 1px 1px #888, 1px 0 1px #ccc;
+    background-color: white;
+    position: absolute;
+    z-index: 2007;
+}
+
+.menu {
+    width: 104px;
+    height: 25px;
+    line-height: 25px;
+    padding: 0 10px;
+    font-size: 12px;
+}
+
+.menu:hover {
+    background: #e6e6e6;
+}
+
+/*鼠标右键菜单end*/
+/* 共同个别使用中图片start */
+.card {
+    height: 16px;
+    width: 16px;
+    margin-left: 18px;
+    margin-top: 5px;
+    border: 0px;
+    background: url("../../../assets/images/table/file-ctb-01.svg");
+    background-size: cover;
+}
+
+/* 共同个别使用中图片end */
+/* 共同设定start */
+.common {
+    font-size: 12px;
+    margin-left: 6px;
+    height: 25px;
+    line-height: 25px;
+    float: left;
+    width: 314px;
+    white-space: nowrap;
+}
+
+.commonFile {
+    width: 314px;
+    height: 235px;
+    font-size: 10px;
+    white-space: nowrap;
+    background-color: #e6e6e6;
+    margin: 25px 0 0 6px;
+    border: 1px solid #000000;
+}
+
+/* 添加按钮大小 start */
+.common @{deep} .uploadCommon {
+    border: 0px;
+    background-image: url("@{imgurl}");
+    background-size: contain;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='@{imgurl}',
+        sizingMethod='scale');
+    width: 16px;
+    height: 13px;
+    margin-top: 6px;
+    float: right;
+}
+
+.ctbFileSettings @{deep} .el-table__header thead {
+    font-size: 10px;
+    color: #e6e6e6;
+}
+
+.ctbFileSettings @{deep} .el-table--scrollable-y .el-table__body-wrapper {
+    overflow: hidden;
+}
+
+/* 去除下方滚动条 */
+.ctbFileSettings @{deep} .el-table--scrollable-x .el-table__body-wrapper {
+    overflow: hidden;
+}
+
+.ctbFileSettings @{deep} .el-table--border th.gutter:last-of-type {
+    background-color: #e6e6e6;
+}
+
+.ctbFileSettings @{deep} tbody .cell {
+    height: 28px;
+    font-size: 11px;
+    padding-right: 0;
+}
+
+.commonFile @{deep} .el-table td {
+    border-right: 0px;
+}
+
+.ctbFileSettings @{deep} .el-table--border td {
+    border-bottom: 2px solid #e6e6e6;
+    padding: 0;
+}
+
+.ctbFileSettings @{deep} .el-table--border {
+    border: 0;
+}
+
+.commonFile @{deep} .el-table th.is-leaf {
+    border: 0px;
+    padding: 0px;
+    font-size: 10px;
+    background-color: #e6e6e6;
+    font-weight: 300;
+}
+
+.ctbFileSettings @{deep} .el-table--border th .cell {
+    font-size: 10px;
+    height: 24px;
+    line-height: 10px;
+    padding-top: 5px;
+    border: 0;
+}
+
+/* 共同设定end */
+/* 个别设定start */
+.individual {
+    font-size: 12px;
+    width: 274px;
+    height: 25px;
+    line-height: 25px;
+    float: right;
+    white-space: nowrap;
+}
+
+.individualFile @{deep} .el-table td {
+    border-right: 0px;
+}
+
+.individualFile {
+    width: 265px;
+    height: 235px;
+    font-size: 12px;
+    margin: 0px 8px 0px 0px;
+    white-space: nowrap;
+    background-color: #e6e6e6;
+    margin: -237px 0 0 326px;
+    border: 1px solid #000000;
+}
+
+.individualFile @{deep} .el-table th.is-leaf {
+    border: 0px;
+    padding: 0px;
+    font-size: 10px;
+    background-color: #e6e6e6;
+    font-weight: 300;
+}
+
+.individual @{deep} .uploadIndividual {
+    border: 0px;
+    background-image: url("@{imgurl}");
+    background-size: contain;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='@{imgurl}',
+        sizingMethod='scale');
+    width: 16px;
+    height: 13px;
+    float: right;
+    margin-top: 6px;
+    margin-right: 8px;
+}
+
+/* 个别设定end */
+.el-table__header-wrapper @{deep} .el-table__header {
+    width: 312px;
+    table-layout: auto;
+}
+
+/* 添加按钮大小 end */
+.title {
+    height: 17px;
+    background-color: #e6e6e6;
+}
+
+/* 鼠标点击底色 */
+.commonFile @{deep} .el-table__body tr.current-row>td {
+    background-color: #e6e6e6 !important;
+}
+
+/* 鼠标点击底色 */
+.individualFile @{deep} .el-table__body tr.current-row>td {
+    background-color: #e6e6e6 !important;
+}
+
+.ctbFileSettings @{deep} .contextmenu {
+    font-size: 12px;
+    margin: 0;
+    cursor: pointer;
+    box-shadow: border-box;
+    padding: 1px 1px 1px 10px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.ctbFileSettings @{deep} #contextStyle {
+    width: 104px;
+    top: 139px;
+    left: 65px;
+}
+
+/* 右上角关闭对话框 */
+.ctbFileSettings @{deep} .el-dialog__close.el-icon.el-icon-close {
+    width: 16px;
+    height: 16px;
+    font-size: 16px;
+}
+
+/* dialog对话框的样式 */
+.ctbFileSettings @{deep} .el-dialog {
+    width: 615px;
+    height: 357px;
+    top: "2vh";
+}
+
+.ctbFileSettings @{deep} .el-dialog__header {
+    height: 32px;
+    background-color: #32465a;
+}
+
+/* 弹框标题设置 */
+.ctbFileSettings @{deep} .el-dialog__title {
+    line-height: 32px;
+}
+
+.div {
+    height: 269px;
+    font-size: 16px;
+    padding: 0;
+    margin: 9px 6px 0px 6px;
+    border: 1px solid #000000;
+    color: #0f0d0d;
+    overflow: hidden;
+}
+
+.footButton {
+    height: 50px;
+    white-space: nowrap;
+}
+
+/* 弹框页脚设置 start */
+
+.dialog-footer @{deep} .el-button.el-button--primary,
+.dialog-footer @{deep} button {
+    width: 120px;
+    height: 32px;
+    background-color: white;
+    font-weight: bold;
+    line-height: 0.7;
+    border-radius: 16px;
+    border: 1px solid #32465a;
+    padding: 0px;
+}
+
+.dialog-footer @{deep} button>span {
+    font-size: 12px;
+}
+
+.dialog-footer @{deep} button.deleteButton {
+    border: 1px solid #eb0000;
+    color: #eb0000;
+    background-color: white;
+    position: absolute;
+    height: 32px;
+    width: 120px;
+    border-radius: 16px;
+    right: 8px;
+}
+
+/*
+ *下载按钮文本颜色
+ */
+.dialog-footer @{deep} button.deleteButton>span {
+    color: #32465a;
+}
+
+/*
+ *删除按钮文本颜色
+ */
+.dialog-footer @{deep} button.deleteButton>span {
+    color: red;
+}
+
+.dialog-footer @{deep} .el-button.deleteButton.el-button--danger.is-disabled.is-plain {
+    border: 1px solid #eb0000;
+    background-color: white;
+    color: #eb0000;
+    position: absolute;
+    right: 8px;
+}

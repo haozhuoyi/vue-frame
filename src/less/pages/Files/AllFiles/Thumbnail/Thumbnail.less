@@ -1,0 +1,118 @@
+#Thumbnail {
+    width: 100%;
+    height: 100%;
+    padding: 19px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.thumbnailview:hover {
+    filter: progid:DXImageTransform.Microsoft.Shadow(color='#969696', Direction=135, Strength=2);
+    /*for ie6,7,8*/
+    -moz-box-shadow: 2px 2px 2px #969696;
+    /*firefox*/
+    -webkit-box-shadow: 2px 2px 2px #969696;
+    /*webkit*/
+    box-shadow: 2px 2px 2px #969696;
+    /*opera或ie9*/
+}
+
+.thumbnailview {
+    width: 110px;
+    height: 110px;
+    text-align: center;
+    background-color: #fff;
+    margin: 9px;
+    border-radius: 4px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+}
+
+.svg-icon {
+    position: absolute;
+    margin: auto;
+}
+
+.svg-icon.uncheck,
+.svg-icon.checked {
+    left: 8px;
+    top: 8px;
+}
+
+.svg-icon.collection {
+    width: 13.39px;
+    height: 12.76px;
+    left: 8px;
+    top: 30px;
+}
+
+.svg-icon.notice {
+    top: 8px;
+    right: 6.4px;
+}
+
+.svg-icon.rename {
+    top: 30px;
+    right: 6.4px;
+}
+
+.svg-icon.QR {
+    left: 8px;
+    top: 55px;
+}
+
+.svg-icon.conversion {
+    left: 27.4px;
+    top: 8px;
+}
+
+.thumbnailview p {
+    font-size: 9px;
+    transform: scale(0.75);
+}
+
+.thumbnailview .filename {
+    word-wrap: break-word;
+    word-break: break-all;
+    line-height: 1;
+    overflow: hidden;
+    max-height: 25px;
+    text-align: center;
+    margin-top: -10px;
+}
+
+.filename.after {
+    margin-top: -10px;
+    text-align: left;
+}
+
+.filename.after::after {
+    content: "...";
+    line-height: 12px;
+    position: absolute;
+    bottom: 0;
+    right: 0px;
+    width: 25px;
+    padding-left: 30px;
+    background: linear-gradient(to right, transparent, #fff 45%);
+}
+
+.thumbnailview .size {
+    bottom: 5.4px;
+    right: 4.4px;
+}
+
+.test-range__select {
+    background: #598fe6;
+    position: fixed;
+    width: 0;
+    height: 0;
+    display: none;
+    top: 0;
+    left: 0;
+    opacity: 0.6;
+    pointer-events: none;
+    z-index: 9999;
+}

@@ -1,0 +1,131 @@
+.el-table {
+    width: 100%;
+    box-shadow: 0px 0px 1px;
+    filter: progid:DXImageTransform.Microsoft.Shadow(color='#969696', Direction=135, Strength=1);
+    /*for ie6,7,8*/
+    -moz-box-shadow: 0px 0px 1px #969696;
+    /*firefox*/
+    -webkit-box-shadow: 0px 0px 1px #969696;
+    /*webkit*/
+    box-shadow: 0px 0px 1px #969696;
+
+    /deep/ .el-table__header-wrapper {
+        margin-bottom: 4px;
+    }
+
+    /deep/ .thCell {
+        padding: 0;
+        border: none;
+        background-color: #fff;
+
+        .cell {
+
+            &:after,
+            &::after {
+                content: '';
+                width: 100%;
+                height: 1px;
+                font-weight: 500;
+                box-sizing: border-box;
+                background-color: #707070;
+                border-bottom: 1px solid #707070;
+                position: absolute;
+                margin: auto;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                margin-right: 8px;
+            }
+        }
+
+        &.cellMarginRightNone {
+            .cell {
+
+                &:after,
+                &::after {
+                    margin-right: 0px
+                }
+            }
+        }
+    }
+
+    /deep/ .cell {
+        height: 25px;
+        line-height: 25px;
+        padding-left: 8px;
+        padding-right: 0px;
+        font-size: 0.75rem;
+        color: #333;
+        font-weight: initial;
+
+        span {
+            font-size: 0.875rem;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            color: #333;
+            font-weight: initial;
+        }
+    }
+
+    /deep/ .gutter {
+        background-color: #fff;
+    }
+
+    /deep/ .el-table__row {
+        &.td {
+            height: 40px;
+            line-height: 40px;
+            cursor: default !important;
+
+            &:nth-child(5) {
+                span {
+                    margin-left: -6px;
+                }
+            }
+        }
+
+        &:focus,
+        &:hover {
+            td {
+                background-color: #ddeeff;
+
+                &:after,
+                &::after {
+                    content: '';
+                    width: 100%;
+                    height: 1px;
+                    font-weight: 500;
+                    box-sizing: border-box;
+                    box-shadow: 3px 1px 2px rgba(0, 0, 0, 0.3);
+                    position: absolute;
+                    margin: auto;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                }
+            }
+        }
+
+        &:active {
+            td {
+                background-color: #ddeeff;
+
+                &:after,
+                &::after {
+                    content: '';
+                    width: 100%;
+                    height: 1px;
+                    font-weight: 500;
+                    box-sizing: border-box;
+                    box-shadow: 3px 1px 2px rgba(0, 0, 0, 0.3);
+                    position: absolute;
+                    margin: auto;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                }
+            }
+        }
+    }
+}

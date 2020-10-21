@@ -1,0 +1,130 @@
+@deep: ~">>>";
+
+.purple @{deep} .el-col.el-col-3:hover {
+    background-color: #e6e6e6;
+}
+
+.content {
+    width: 627px;
+    overflow: hidden;
+    background: #e6e6e6;
+}
+
+.shortButton {
+    width: 64px;
+}
+
+.longButton {
+    width: 88px;
+}
+
+.titleButton {
+    width: 584px;
+    height: 28px;
+    padding: 9px 0px;
+    font-size: 12px;
+    line-height: 25px;
+}
+
+.purple @{deep} .el-col {
+    margin-left: 1px;
+    margin-top: 1px;
+    width: 87px;
+    height: 87px;
+    position: relative;
+    background-color: white;
+}
+
+.contentSvg @{deep} svg {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    top: 11.25px;
+    left: 11.83px;
+    height: 40px;
+    width: 40px;
+}
+
+.contentCollect {
+    position: absolute;
+    margin: auto;
+    right: 5px;
+    bottom: 5px;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.purple @{deep} .el-radio-button {
+    height: 28px;
+    font-size: 12px;
+    margin-left: -1px;
+}
+
+.purple @{deep} .el-radio-button.is-active .el-radio-button__inner {
+    background-color: #32465a;
+    color: white;
+}
+
+.shortButton @{deep} .el-radio-button__inner {
+    width: 64px;
+    height: 28px;
+}
+
+.longButton @{deep} .el-radio-button__inner {
+    width: 88px;
+    height: 28px;
+}
+
+.purple @{deep} .el-radio-button__inner {
+    font-size: 12px;
+    padding: 7px 0 0 0;
+    border: 1px solid #32465a;
+}
+
+/* dialog对话框的样式 */
+.boardManagement @{deep} .el-dialog {
+    width: 645px;
+    height: 348px;
+    font-size: 18px;
+    overflow: hidden;
+}
+
+.boardManagement @{deep} .el-row {
+    background-color: #e6e6e6;
+    height: 262px;
+    position: relative;
+    margin-top: 1px;
+    border: 1px solid #000000;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+.boardManagement @{deep} .purple .el-radio-group {
+    padding-bottom: 4px;
+}
+
+.boardManagement @{deep} .el-dialog__body {
+    height: 293px;
+}
+
+.boardManagement @{deep} .el-dialog__header {
+    padding: 4px 50px 4px 10px;
+    background-color: #32465a;
+}
+
+.boardManagement @{deep} .el-dialog__title {
+    color: white;
+    font-size: 0.875rem;
+}
+
+.dialog-footer @{deep} .el-button.el-button--primary,
+.dialog-footer @{deep} button {
+    width: 94px;
+    height: 37px;
+    vertical-align: middle;
+    position: initial;
+    font-weight: bold;
+    line-height: 0.7;
+}

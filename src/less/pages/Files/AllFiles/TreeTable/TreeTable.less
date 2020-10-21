@@ -1,0 +1,309 @@
+@deep: ~">>>";
+@imgurl: '../../../../../assets/images/file/';
+
+.el-main @{deep} #Table section {
+    padding: 0;
+}
+
+/* 右键 */
+.contextmenu {
+    font-size: 12px;
+    margin: 3.2px 0;
+    cursor: pointer;
+    box-shadow: border-box;
+    padding: 1px 40px 1px 16px;
+}
+
+#TreeTable,
+.el-container {
+    width: 100%;
+    height: 100%;
+}
+
+.el-container {
+    padding: 16px;
+    box-sizing: border-box;
+
+    @{deep} .gutter.gutter-horizontal {
+        background-image: none;
+        background-color: #fff;
+    }
+}
+
+.el-aside,
+.el-main,
+.treeContainer {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.el-aside {
+    margin: 0 2px 0 0;
+}
+
+.el-main {
+    min-width: 600px;
+    padding: 0;
+    overflow: hidden;
+    margin-left: 10px;
+}
+
+.treeContainer {
+    overflow: auto;
+    position: relative;
+    background-color: #fff;
+
+    &.after:after {
+        content: 'データがありません';
+        width: 126px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        color: #909399;
+        font-size: 0.875rem;
+    }
+}
+
+#TreeTable @{deep} .split.split-horizontal {
+    position: relative;
+}
+
+#TreeTable @{deep} .el-tree {
+    z-index: 10;
+    min-width: 178px;
+    display: inline-block !important;
+}
+
+// /* 第一层 线隐藏 */
+// .tree @{deep} > .el-tree-node:before{
+//     display: none;
+// }
+// /* 第一层 加减符号 隐藏 */
+// .tree @{deep} > .el-tree-node>.el-tree-node__content>.el-icon-caret-right{
+//     display: none;
+// }
+
+// .tree @{deep} .renderContent {
+//     position: relative;
+//     width: 99%;
+//     height: 31px;
+//     line-height: 1.7;
+//     margin-left: 0px;
+//     cursor: default;
+// }
+
+// .childIcon,
+// .tree @{deep} .childIcon {
+//     display: inline-block;
+//     width: 20px;
+//     height: 15.517px;
+//     background: url("@{imgurl}file-tree-icon-12.svg");
+//     background-size: auto;
+//     background-repeat: no-repeat;
+//     background-position: center;
+//     margin: auto;
+//     position: absolute;
+//     top: 0px;
+//     left: 0px;
+//     bottom: 0;
+// }
+
+// .tree @{deep} .childLabel {
+//     margin-left: 28px;
+//     margin-top: 0px;
+//     display: inline-block;
+//     color: #333333;
+//     height: 100%;
+//     line-height: 28px;
+//     font-size: 0.875rem;
+// }
+
+// .tree @{deep} .el-tree-node__content {
+//     height: 31px;
+//     position: relative;
+
+//     &.conceal {
+//         display: none;
+//     }
+// }
+
+// .tree @{deep} span.expanded.el-tree-node__expand-icon.el-icon-caret-right,
+// .tree @{deep} span.el-tree-node__expand-icon.el-icon-caret-right {
+//     font-size: 12px;
+//     width: 5px;
+//     height: 5px;
+//     margin-right: 10px;
+//     margin-left:-27px;
+// }
+
+// .tree @{deep} .el-tree-node__expand-icon:before {
+//     content: "";
+// }
+
+// .tree @{deep} .el-tree-node__expand-icon {
+//     display: inline-block;
+//     background: url("@{imgurl}file-tree-noexpanded-11.svg") no-repeat;
+//     background-color:white;
+//     z-index: 999;
+//     background-size: 100% 100%;
+//     filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='@{imgurl}file-tree-noexpanded-11.svg', sizingMethod='scale');
+// }
+
+// .tree @{deep} .expanded.el-tree-node__expand-icon {
+//     display: inline-block;
+//     background: url("@{imgurl}file-tree-expanded-10.svg") no-repeat;
+//     background-color:white;
+//     z-index: 999;
+//     background-size: 100% 100%;
+//     filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='@{imgurl}file-tree-expanded-10.svg', sizingMethod='scale');
+// }
+
+// .tree @{deep} .el-tree-node__loading-icon {
+//     display: none;
+// }
+
+// .tree @{deep} .is-leaf {
+//     display: none;
+// }
+
+// /* tree连接线 */
+// .tree @{deep} .el-tree>.el-tree-node:after {
+//     border-top: none;
+// }
+
+// .tree @{deep} .el-tree-node {
+//     position: relative;
+//     padding: 0 10px;
+// }
+
+// .tree @{deep} .el-tree-node__children {
+//     padding-left: 19px;
+// }
+
+// .tree @{deep} .el-tree-node :last-child:before {
+//     height: 41px;
+// }
+
+// .tree @{deep} .el-tree>.el-tree-node:before {
+//     border-left: none;
+
+//     &:first-child {
+//         top: 1px;
+//     }
+// }
+
+// .treeContainer @{deep} .el-tree>.el-tree-node:after {
+//     border-top: none;
+// }
+
+// // .tree @{deep} .el-tree-node:before {
+// //     content: "";
+// //     left: -4px;
+// //     position: absolute;
+// //     right: auto;
+// //     border-width: 1px;
+// // }
+
+// // .tree @{deep} .el-tree-node:after {
+// //     content: "";
+// //     left: -4px;
+// //     position: absolute;
+// //     right: auto;
+// //     border-width: 1px;
+// // }
+
+// .tree @{deep} .el-tree-node:before {
+//     content: "";
+//     position: absolute;
+//     right: auto;
+//     border-width: 1px;
+//     border-left: 1px solid #999999;
+//     bottom: 0px;
+//     height: 100%;
+//     top: -26px;
+//     width: 1px;
+//     left: -10px;
+// }
+
+// .tree @{deep} .el-tree-node:after {
+//     content: "";
+//     position: absolute;
+//     right: auto;
+//     border-width: 1px;
+//     border-top: 1px solid #999999;
+//     height: 20px;
+//     top: 15px;
+//     width: 19px;
+//     left: -10px;
+// }
+
+// .tree @{deep} .el-tree-node__content:hover,
+// .tree @{deep} .el-tree-node__content:focus {
+//     background-color: #ddeeff;
+// }
+
+// .tree @{deep} .el-tree-node__content:active {
+//     background-color: #ccddee;
+// }
+
+// .tree @{deep} .el-tree-node.is-current.is-focusable {
+//     >.el-tree-node__content {
+//         background-color: #ccddee;
+//     }
+
+//     &:hover,
+//     &:focus,
+//     &:active {
+//         >.el-tree-node__content {
+//             background-color: #ccddee;
+//         }
+//     }
+// }
+
+.tree @{deep} .el-tree-node.is-current {
+        >.el-tree-node__content {
+            background-color: #ccddee;
+        }
+
+        &:hover,
+        &:focus,
+        &:active {
+            >.el-tree-node__content {
+                background-color: #ccddee;
+            }
+        }
+}
+
+.dropCoverLayer {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    z-index: 1003;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(225, 225, 225, 0.9);
+    pointer-events: none;
+
+    div {
+        width: 100%;
+        height: 100%;
+        position: relative;
+
+        p {
+            width: 455px;
+            height: 24px;
+            text-align: center;
+            position: absolute;
+            margin: auto;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            color: #999999;
+        }
+    }
+}

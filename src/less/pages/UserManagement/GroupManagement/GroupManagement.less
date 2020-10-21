@@ -1,0 +1,124 @@
+@deep: ~">>>";
+
+@SHCollagen: 100%;
+
+.SHCollagen {
+    width: @SHCollagen;
+    height: @SHCollagen;
+}
+
+#groupManagement {
+    .SHCollagen();
+
+    .el-container.is-vertical {
+        .SHCollagen();
+
+        .el-header {
+            display: inline-flex;
+
+            @{deep} #headButtons {
+                width: 124px;
+            }
+
+            .showOpacityOuterLayer {
+                width: 70px;
+                margin-left: 80.6px;
+                display: inline-block;
+                position: relative;
+
+                .showOpacity {
+                    width: 100%;
+                    height: 72px;
+                    display: inline-block;
+                    position: absolute;
+                    margin: auto;
+                    top: 0;
+                    bottom: 0;
+                    opacity: .7;
+                    cursor: no-drop;
+                    background-color: #fff;
+
+                    &.left {
+                        left: 0;
+                    }
+
+                    &.center {
+                        left: 0;
+                        right: 0;
+                    }
+
+                    &.right {
+                        right: 0;
+                    }
+                }
+            }
+        }
+
+        .el-main {
+            padding: 16px;
+            background-color: #fff;
+            border-top: 1px solid #999999;
+
+            @{deep} .split {
+                .gutter.gutter-horizontal {
+                    background-color: transparent;
+                    background-image: none;
+                }
+
+                .split.split-horizontal {
+                    .title {
+                        width: 200px;
+                        font-size: 16px;
+                        padding: 0 22px;
+                        position: relative;
+                        color: #333333;
+                        margin-left: 3%;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+
+                        .backgroundColor {
+                            width: 14px;
+                            height: 14px;
+                            position: absolute;
+                            margin: auto;
+                            top: 0;
+                            bottom: 0;
+                            left: 0;
+                            border-radius: 90px;
+                            border: 1px solid #707070;
+                        }
+                    }
+
+                    .titleAssistant {
+                        display: block;
+                        font-size: 14px;
+                        color: #999999;
+                        margin-top: 4px;
+                        margin-bottom: 6px;
+                        margin-left: 3%;
+                    }
+
+                    .belongsTitle {
+                        width: @SHCollagen;
+                        height: 24px;
+                        line-height: 24px;
+                        border-bottom: 1px solid #999;
+
+                        p {
+                            font-size: 0.75rem;
+                            color: #333333;
+                        }
+                    }
+
+                    .belongs {
+                        .SHCollagen();
+                        min-width: 180px;
+                        height: calc(~"100% - 25px");
+                        overflow: hidden auto;
+                    }
+                }
+            }
+        }
+    }
+}

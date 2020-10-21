@@ -1,0 +1,166 @@
+@deep: ~">>>";
+@h: 40px;
+
+.height {
+    height: @h;
+    line-height: @h;
+}
+
+.title {
+    font-size: 0.875rem;
+    color: #0f0d0d;
+    height: 21px;
+    line-height: 21px;
+    position: relative;
+    margin-bottom: 4.4px;
+}
+
+.table {
+    width: 500px;
+    cursor: default;
+
+    @{deep} .el-table__header {
+        .headerCellClassName {
+            height: 22px;
+            padding: 0px 0px;
+
+            .cell {
+                position: relative;
+                padding: 0 0 0 8px;
+                font-size: 0.75rem;
+                color: #333333;
+                text-align: left;
+                vertical-align: bottom;
+
+                &:after,
+                &::after {
+                    content: '';
+                    width: 100%;
+                    height: 1px;
+                    font-weight: 500;
+                    box-sizing: border-box;
+                    background-color: #707070;
+                    border-bottom: 1px solid #707070;
+                    position: absolute;
+                    margin: auto;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    margin-right: 8px;
+                }
+            }
+
+            &:last-child {
+                .cell {
+
+                    &:after,
+                    &::after {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    @{deep} .el-table__body-wrapper.is-scrolling-none,
+    @{deep} .el-table__empty-block {
+        height: 32px;
+        line-height: 32px;
+        min-height: 32px;
+        max-height: 144px;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    @{deep} .cellCellClassName {
+        padding: 0;
+        .height();
+
+        .cell {
+            padding: 0;
+            .height();
+        }
+
+        // span,
+
+        p {
+            width: calc(~"100% - 13px - 105px");
+            font-size: 0.875rem;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+
+        img {
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            margin: auto;
+            top: 0;
+            left: 0;
+            right: 8px;
+            bottom: 0;
+            cursor: pointer;
+        }
+
+        &.prohibit {
+            pointer-events: none;
+        }
+    }
+
+    @{deep} .td__update {
+        background-color: #ffdbbf;
+    }
+
+    @{deep} .gutter {
+        border-bottom: 1px solid transparent;
+    }
+
+    @{deep} .groupUserStatus {
+        position: absolute;
+        margin: auto;
+        right: 8px;
+        top: 0;
+        bottom: 0;
+        font-size: 0.875rem;
+
+        &.ex {
+            width: auto;
+            color: #4146cd;
+        }
+
+        &.prohibit {
+            width: auto;
+            color: #d61918;
+        }
+
+        &.prohibitAndEx {
+            width: auto;
+
+            :first-child {
+                color: #4146cd;
+                font-size: 14px;
+                height: 15px;
+                line-height: 15px;
+                margin: 5px 0;
+            }
+
+            :last-child {
+                color: #d61918;
+                height: 15px;
+                line-height: 15px;
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+.groupAccess {
+    height: 100%;
+
+    @{deep} .el-dialog__body {
+        // width: 450px;
+        width: 530px;
+        height: 100%;
+    }
+}

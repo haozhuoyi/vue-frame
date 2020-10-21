@@ -1,0 +1,25 @@
+<svg width="40" height="32" xmlns="http://www.w3.org/2000/svg">
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <g stroke-miterlimit="10" stroke="#32465a" fill="#fff" id="矩形_1591">
+   <rect id="svg_1" rx="2" height="32" width="40"/>
+   <rect id="svg_2" fill="none" rx="1.5" height="31" width="39" y="0.5" x="0.5"/>
+  </g>
+  <g id="组_2368">
+   <g id="组_2365">
+    <circle fill="#999" r="2.177" cy="15.999021" cx="11.999998" id="椭圆_514"/>
+   </g>
+   <g id="组_2366">
+    <circle fill="#999" r="2.177" cy="15.999021" cx="19.999998" id="椭圆_515"/>
+   </g>
+   <g id="组_2367">
+    <circle fill="#999" r="2.177" cy="15.999021" cx="27.999998" id="椭圆_516"/>
+   </g>
+  </g>
+ </g>
+</svg>

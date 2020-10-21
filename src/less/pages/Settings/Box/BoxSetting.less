@@ -1,0 +1,359 @@
+@deep: ~">>>";
+@imgurl: "../../../../assets/images/file/";
+
+/* dialog对话框的样式 */
+.dialog_boxSetting {
+    font-size: 12px;
+    font-family: "YuGo-Medium";
+    overflow: hidden;
+}
+
+.dialog_boxSetting @{deep} .el-dialog__close.el-icon.el-icon-close {
+    color: #000000;
+    margin-right: 6px;
+}
+
+.dialog_boxSetting @{deep} .el-dialog__header {
+    height: 24px;
+    box-sizing: border-box;
+}
+
+.dialog_boxSetting @{deep} .el-dialog__close.el-icon.el-icon-close {
+    color: #ffffff;
+}
+
+.dialog_boxSetting @{deep} .el-dialog__body {
+    border: 0px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.dialog_boxSetting @{deep} .el-dialog__title {
+    line-height: 24px;
+}
+
+
+.dialog-footer @{deep} .el-button.el-button--primary,
+.dialog-footer @{deep} button {
+    height: 32px;
+    position: initial;
+    font-weight: 500;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 6px;
+    padding: 7px 0px 7px 0px;
+    position: absolute;
+    border-radius: 16px;
+    background-color: #ffffff;
+}
+
+.dialog-footer @{deep} .el-button.el-button--primary,
+.dialog-footer @{deep} button>span {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.dialog_boxSetting @{deep} .el-select .el-input__inner {
+    height: 20px;
+    width: 204px;
+    padding: 0 0 0 8px;
+    vertical-align: middle;
+    line-height: 20px;
+}
+
+/* フォームの様式 */
+.form_boxSetting_connect {
+    padding: 0px;
+}
+
+.form_boxSetting_connect @{deep} .el-form-item {
+    margin: 0px;
+    margin-top: 0px;
+}
+
+.form_boxSetting_connect @{deep} .el-form-item__label {
+    padding: 0px;
+    font-size: 12px;
+}
+
+.form_boxSetting_connect @{deep} .el-radio-button__inner {
+    height: 20px;
+    width: 40px;
+    font-size: 12px;
+    padding: 4px 3px 4px 3px;
+    border-radius: 0;
+    color: #333333;
+    background-color: #ffffff;
+    border-color: #32465a;
+    box-shadow: none;
+}
+
+.form_boxSetting_connect @{deep} .el-radio-button__orig-radio:checked+.el-radio-button__inner {
+    background-color: #32465a;
+    color: #ffffff;
+}
+
+.form_boxSetting_connect @{deep} .el-input__suffix {
+    top: 1px;
+}
+
+.form_boxSetting_connect @{deep} .el-input__suffix-inner {
+    margin-right: -10px;
+    background-color: #32465a;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-color: #707070;
+    display: inline-flex;
+    height: 20px;
+}
+
+.form_boxSetting_connect @{deep} .el-select .el-input .el-select__caret {
+    line-height: 20px;
+    height: 20px;
+}
+
+.form_boxSetting_connect @{deep} .el-icon-arrow-up:before {
+    content: "\e78f";
+    color: #ffffff;
+    size: 11px;
+}
+
+// 自定義classとid
+.div_body {
+    padding: 0px;
+    /* overflow: hidden; */
+    box-sizing: border-box;
+}
+
+.btn_accountManage {
+    width: 121.33px;
+    left: 6px;
+    border-color: #32465a;
+}
+
+.dialog-footer @{deep} .el-button.el-button--primary,
+.dialog-footer @{deep} .btn_setting>span {
+    color: #32465a;
+}
+
+.btn_setting {
+    width: 54.33px;
+    right: 6px;
+    border-color: #d61918;
+}
+
+.dialog-footer @{deep} .el-button.el-button--primary,
+.dialog-footer @{deep} .btn_setting>span {
+    color: #d61918;
+}
+
+.otherOrNoConnectMessage {
+    height: 287px;
+    background-color: #f0f0f0;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    display: -webkit-box;
+    /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+    display: -moz-box;
+    /* 老版本语法: Firefox (buggy) */
+    display: -ms-flexbox;
+    /* 混合版本语法: IE 10 */
+    display: -webkit-flex;
+    /* 新版本语法: Chrome 21+ */
+    display: flex;
+    /* 新版本语法: Opera 12.1, Firefox 22+ */
+    align-items: center;
+    justify-content: center;
+}
+
+// 树样式
+.el-aside {
+    padding: 16px 0 0 14px;
+    margin: 0 2px 0 0;
+}
+
+.el-main {
+    padding: 16px 14px 0 0;
+    margin: 0 0 0 2px;
+}
+
+.tree-scroll {
+    height: 287px;
+    width: 455px;
+    overflow: auto;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+}
+
+.treeContainer {
+    height: 100%;
+    width: 100%;
+    padding: 6px 18px 6px 6px;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+#BoxSetting @{deep} .el-tree {
+    display: inline-block;
+}
+
+.tree @{deep} .renderContent {
+    position: relative;
+    width: 99%;
+    height: 31px;
+    line-height: 1.7;
+    margin-left: 1%;
+    cursor: default;
+}
+
+childIcon-hr,
+.tree @{deep} .childIcon-hr {
+    display: inline-block;
+    width: 9px;
+    height: 1px;
+    background-color: #999999;
+    background-size: auto;
+    background-repeat: no-repeat;
+    margin: auto;
+    position: absolute;
+    top: 0px;
+    left: 5.7px;
+    bottom: 0;
+    border: 0px #999999;
+}
+
+.childIcon,
+.tree @{deep} .childIcon {
+    display: inline-block;
+    width: 20px;
+    height: 15.517px;
+    background: url("@{imgurl}file-tree-icon-12.svg");
+    background-size: auto;
+    background-repeat: no-repeat;
+    margin: auto;
+    position: absolute;
+    top: 0px;
+    left: 5.9px;
+    bottom: 0;
+    margin-left: 9px;
+}
+
+.tree @{deep} .childLabel {
+    margin-left: 60px;
+    margin-top: 0px;
+    font-size: 12px;
+    display: inline-block;
+    color: #333333;
+    height: 100%;
+    line-height: 28px;
+}
+
+.tree @{deep} .el-tree-node__content {
+    height: 31px;
+    position: relative;
+    padding: 0px;
+}
+
+.tree @{deep} .el-tree-node__content:hover {
+    background-color: #a5c8d7;
+}
+
+.tree @{deep} span.expanded.el-tree-node__expand-icon.el-icon-caret-right,
+.tree @{deep} span.el-tree-node__expand-icon.el-icon-caret-right {
+    font-size: 12px;
+    width: 5px;
+    height: 4px;
+}
+
+.tree @{deep} .el-tree-node__expand-icon:before {
+    content: "";
+}
+
+.tree @{deep} label.el-checkbox {
+    margin-left: 36px;
+    margin-right: -57px;
+}
+
+.tree @{deep} .el-tree-node__expand-icon {
+    display: inline-block;
+    width: 5.5px;
+    height: 4px;
+    background: url("@{imgurl}file-tree-noexpanded-11.svg");
+    background-size: auto;
+    background-repeat: no-repeat;
+    z-index: 999;
+    padding: 6px;
+}
+
+.tree @{deep} .expanded.el-tree-node__expand-icon {
+    background: url("@{imgurl}file-tree-expanded-10.svg");
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+.tree @{deep} .el-tree-node__loading-icon {
+    display: none;
+}
+
+.tree @{deep} .is-leaf {
+    display: none;
+}
+
+/* tree连接线 */
+.tree @{deep} .el-tree>.el-tree-node:after {
+    border-top: none;
+}
+
+.tree @{deep} .el-tree-node {
+    position: relative;
+    padding-left: 16px;
+}
+
+.tree @{deep} .el-tree-node__children {
+    padding-left: 16px;
+}
+
+.tree @{deep} .el-tree-node :last-child:before {
+    height: 41px;
+}
+
+.tree @{deep} .el-tree>.el-tree-node:before {
+    border-left: none;
+}
+
+.treeContainer @{deep} .el-tree>.el-tree-node:after {
+    border-top: none;
+}
+
+.tree @{deep} .el-tree-node:before {
+    content: "";
+    left: -4px;
+    position: absolute;
+    right: auto;
+    border-width: 1px;
+}
+
+.tree @{deep} .el-tree-node:after {
+    content: "";
+    left: -4px;
+    position: absolute;
+    right: auto;
+    border-width: 1px;
+}
+
+.tree @{deep} .el-tree-node:before {
+    border-left: 1px solid #999999;
+    bottom: 0px;
+    height: 100%;
+    top: -26px;
+    width: 1px;
+    left: -9px;
+}
+
+.tree @{deep} .el-tree-node:after {
+    border-top: 1px solid #999999;
+    height: 20px;
+    top: 15px;
+    width: 24px;
+    left: -9px;
+}

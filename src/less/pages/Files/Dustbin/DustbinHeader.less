@@ -1,0 +1,31 @@
+@deep: ~">>>";
+
+#dustbinHeader {
+    width: 100%;
+    height: 72px;
+
+    .button {
+        width: 40px;
+        height: 32px;
+        vertical-align: middle;
+        text-align: center;
+        line-height: 0.7;
+        background-color: #ffffff;
+        border: 1px solid #32465a;
+    }
+
+    .Selected {
+        background-color: #32465a;
+    }
+
+    .dis {
+        background-color: #32465a;
+        cursor: no-drop;
+
+        &.Selected {
+            i {
+                color: #666666;
+            }
+        }
+    }
+}

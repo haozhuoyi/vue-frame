@@ -1,0 +1,60 @@
+@deep: ~">>>";
+
+.licenseStting {
+    @{deep} .el-dialog__body {
+        padding-bottom: 16px;
+
+        .el-header {
+            padding: 0;
+
+            .el-menu-item {
+                font-family: "YuGo-Bold";
+            }
+
+            .el-menu--horizontal>.el-menu-item.is-active {
+                border-bottom: 4px solid #d61918;
+                color: #2d2d3c;
+            }
+
+            .el-menu--horizontal>.el-menu-item {
+                height: 40px;
+                line-height: 40px;
+                font-size: 1rem;
+                margin-left: 4px;
+            }
+        }
+
+        .el-main {
+            padding: 0;
+            overflow: auto;
+
+            .japaneseTitle,
+            .englishTitle {
+                p {
+                    font-size: 1rem;
+                    font-weight: bold;
+                    margin-top: 8px;
+                    margin-bottom: 6px;
+                }
+            }
+
+            .listshowJapanese {
+                display: block;
+
+                p {
+                    font-size: 0.875rem;
+                    margin-bottom: 8px;
+                }
+            }
+
+            .listshowEnglish {
+                display: block;
+
+                p {
+                    font-size: 0.875rem;
+                    margin-bottom: 8px;
+                }
+            }
+        }
+    }
+}

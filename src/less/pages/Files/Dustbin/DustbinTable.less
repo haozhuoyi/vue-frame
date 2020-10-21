@@ -1,0 +1,289 @@
+@deep: ~">>>";
+
+#dustbinlisttable {
+    width: calc(~"100% - 19px");
+    height: 100%;
+
+    /* 头部 */
+    .liHead {
+        width: calc(~"100% - 441px");
+        height: 22px;
+        font-size: 12px;
+        color: #333333;
+        padding-left: 8px;
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        box-sizing: border-box;
+        line-height: 22px;
+        cursor: default;
+
+        &.border {
+            border-bottom: 1px solid #999999;
+
+            &.sort {
+                cursor: pointer;
+            }
+        }
+
+        &.li {
+            width: calc(~"100% - 437px");
+            height: 40px;
+            line-height: 40px;
+            display: inline-block;
+            position: relative;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+
+            span,
+            p {
+                height: 24px;
+                line-height: 24px;
+                display: inline-block;
+                position: absolute;
+                font-size: 0.875rem;
+                font-weight: initial;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                margin: auto;
+                top: 0;
+                bottom: 0;
+                left: 36px;
+                text-align: left;
+                padding-left: 8px;
+            }
+
+            .icon {
+                width: 24px;
+                height: 24px;
+                margin-top: 7px;
+                display: inline-block;
+                position: relative;
+
+                img {
+                    width: 24px;
+                    height: 24px;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        &.time {
+            width: 160px;
+            margin-right: 8px;
+            margin-left: 8px;
+        }
+
+        &.expurgator {
+            width: 146px;
+            margin-right: 0;
+        }
+
+        &.restitution {
+            width: 62px;
+            margin-right: 8px;
+            margin-left: 8px;
+        }
+
+        &.del {
+            width: 37px;
+        }
+    }
+
+    /* 内容 */
+    .ulBody {
+        width: calc(~"100% + 19px");
+        height: auto;
+        max-height: calc(~"100% - 24px");
+        overflow-x: hidden;
+        overflow: hidden auto;
+        margin-top: -1px;
+
+        >li {
+            cursor: pointer;
+
+            >ul {
+                &:hover {
+                    background-color: #CCDDEE;
+                    box-shadow: 2px 2px 2px rgba(0, 0, 0, .3);
+
+                    >li,
+                    .interval {
+                        border-bottom: none;
+                        cursor: default;
+                    }
+                }
+
+                >li {
+                    border-bottom: 1px solid #f0f0f0;
+                }
+            }
+
+            &.checked {
+                background-color: #ccddee;
+
+                >ul {
+
+                    &:active,
+                    &:focus,
+                    &:hover {
+                        background-color: #ccddee;
+                        box-shadow: 2px 2px 2px rgba(0, 0, 0, .3);
+                    }
+                }
+            }
+        }
+
+        .time,
+        .expurgator,
+        .restitution,
+        .expurgator {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+
+            span {
+                left: 0px;
+                right: 0px;
+            }
+        }
+
+        .time {
+            width: 160px;
+        }
+
+        .expurgator {
+            width: 146px;
+        }
+
+        .restitution {
+            width: 62px;
+
+            img {
+                margin-top: 9px;
+                cursor: pointer;
+            }
+        }
+
+        .del {
+            width: 37px;
+
+            img {
+                margin-top: 9px;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .interval {
+        height: 39px;
+        width: 8px;
+        vertical-align: top;
+        display: inline-block;
+        border-bottom: 1px solid #f0f0f0;
+        cursor: default;
+    }
+}
+
+.dustbinlistTablebuttonSelect {
+    >div {
+        width: 138px;
+        margin-right: 13px;
+        display: inline-block;
+
+        .kind {
+            margin-bottom: 10px;
+        }
+
+        .bottonselect {
+            width: 56px;
+            height: 24px;
+            line-height: 1;
+            margin-left: 5px;
+            background-color: #fff;
+            border-radius: 1.6px;
+            border: 1px solid #32465a;
+
+            p {
+                font-size: 12px;
+            }
+        }
+    }
+
+    >ul {
+        width: 500px;
+        display: inline-block;
+
+        li {
+            width: 280px;
+
+            &:hover {
+                background-color: #CCDDEE;
+            }
+
+            label {
+                width: auto;
+                height: 28px;
+                padding: 0;
+                display: block;
+                cursor: pointer;
+                line-height: 28px;
+                padding-top: 3px;
+                padding-left: 8px;
+                padding-right: 8px;
+                display: inline-block;
+                box-sizing: border-box;
+
+                .checkContainer {
+                    width: 20px;
+                    height: 20px;
+                    border: 1px solid #32465a;
+                    float: left;
+                    position: relative;
+                    border-radius: 2px;
+                    box-sizing: border-box;
+                }
+
+                span {
+                    width: auto;
+                    height: 20px;
+                    line-height: 20px;
+                    display: block;
+                    float: left;
+                    text-align: left;
+                    font-size: 0.875rem;
+                    margin-left: 8px;
+                }
+            }
+
+            input[type="checkbox"] {
+                width: 0;
+
+                &:checked+.checkContainer {
+                    background-color: #32465a;
+
+                    &:before {
+                        content: "";
+                        position: absolute;
+                        width: 6px;
+                        height: 10px;
+                        border-right: 3px solid #ffffff;
+                        border-bottom: 3px solid #ffffff;
+                        transform: rotate(45deg);
+                        -webkit-transform: rotate(45deg);
+                        -moz-transform: rotate(45deg);
+                        -ms-transform: rotate(45deg);
+                        -o-transform: rotate(45deg);
+                        left: 0;
+                        right: 0;
+                        left: 0;
+                        top: 1px;
+                        margin: auto;
+                    }
+                }
+            }
+        }
+    }
+}

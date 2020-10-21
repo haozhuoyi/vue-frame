@@ -1,0 +1,74 @@
+@deep: ~">>>";
+
+#allFilesHeader {
+    height: 100%;
+    margin: 0 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
+
+    .fileSearchArea {
+        position: relative;
+        flex: 0 0 auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        @{deep} .el-input.el-input--prefix {
+            width: 200px;
+            position: relative;
+            margin-right: 8px;
+        }
+
+        @{deep} .closeSearchResults {
+            margin-right: 8px;
+
+            .headButton {
+                margin: 0;
+            }
+
+            &.opacity {
+                opacity: .3;
+                pointer-events: none;
+            }
+        }
+
+        .buttonSearchOption {
+            min-width: 92px;
+            width: 92px;
+
+            img {
+                vertical-align: middle;
+            }
+
+            &:active,
+            &:hover {
+                color: #333;
+                background-color: #fff;
+            }
+        }
+
+        @{deep} .el-input {
+            &::-webkit-input-placeholder {
+                font-family: "HiraginoSans-W3";
+                color: #999999;
+            }
+
+            &:-moz-placeholder {
+                font-family: "HiraginoSans-W3";
+                color: #999999;
+            }
+
+            &:-ms-input-placeholder {
+                font-family: "HiraginoSans-W3";
+                color: #999999;
+            }
+
+            .el-input__inner {
+                padding-left: 30px;
+                background-color: #f0f0f0;
+            }
+        }
+    }
+}

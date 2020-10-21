@@ -1,0 +1,43 @@
+@deep: ~">>>";
+
+#userManagement,
+.el-container.is-vertical {
+    height: 100%;
+}
+
+.el-main {
+    height: -moz-calc(~"100% - 40px");
+    height: -webkit-calc(~"100% - 40px");
+    height: calc(~"100% - 40px");
+    overflow: hidden;
+}
+
+.el-header,
+.el-main {
+    padding: 0;
+}
+
+.el-header @{deep} .el-menu.el-menu--horizontal {
+    /* border-bottom: 1px solid #000; */
+    /* box-shadow: 0px 3px 3px #000000; */
+    height: 40px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #707070;
+}
+
+.el-header @{deep} .el-menu-item {
+    font-family: "YuGo-Bold";
+}
+
+.el-header @{deep} .el-menu--horizontal>.el-menu-item.is-active {
+    border-bottom: 4px solid #d61918;
+    color: #2d2d3c;
+}
+
+#userManagement @{deep} .el-menu--horizontal>.el-menu-item {
+    height: 39px;
+    line-height: 39px;
+    box-sizing: border-box;
+    margin-left: 8px;
+    font-size: 1rem;
+}

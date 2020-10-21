@@ -1,0 +1,357 @@
+@deep: ~">>>";
+@imgurl: "../../../../../assets/images/file";
+// .tree-body {
+//     flex: 1 1 auto;
+//     overflow: auto;
+//     width: 600px;
+//     // height: 297px;
+//     border-radius: 2px;
+// }
+
+
+/* dialog様式 */
+.moveAndCopyDialog @{deep} .el-dialog {
+    &.largeDialog {
+        width: 720px;
+        height: 100%;
+    }
+
+    .el-dialog__body {
+        height: 100%;
+        border: 0px;
+        overflow: hidden;
+        display: flex;
+        box-sizing: border-box;
+        flex-direction: column;
+
+        .title {
+            flex: 0 0 auto;
+            margin-bottom: 8px;
+
+            .headerTitle {
+                font-size: 12px;
+                float: left;
+                width: 400px;
+                padding-top: 22px;
+            }
+
+            // 搜索框
+            .input {
+                width: 200px;
+                float: right;
+                padding-top: 8px;
+
+                .el-input.el-input--prefix {
+                    width: 200px;
+
+                    &::-webkit-input-placeholder,
+                    &:-ms-input-placeholder,
+                    &:-ms-input-placeholder {
+                        font-family: "HiraginoSans-W3";
+                        color: #999999;
+                    }
+
+                    // .el-input__prefix {
+                    //     line-height: 37px;
+                    //     padding: 0 6.2px;
+
+                    //     img {
+                    //         width: 24px;
+                    //         height: 24px;
+                    //         margin-top: 7px;
+                    //     }
+                    // }
+
+                    .el-input__inner {
+                        padding-left: 30px;
+                        background-color: #f0f0f0;
+                    }
+                }
+            }
+        }
+    }
+
+    .dialog-footer {
+        .footRadio {
+            width: 600px;
+            height: 28px;
+            margin-top: 8px;
+
+            .footTitle {
+                width: 125px;
+                text-align: left;
+                margin-top: 6px;
+                float: left;
+                font-size: 12px;
+                width: max-content;
+                width: -webkit-max-content;
+                width: -moz-max-content;
+            }
+
+            .el-radio-group {
+                border-radius: 2px;
+                vertical-align: middle;
+                margin-top: 4px;
+                float: left;
+                margin-left: 6px;
+                border: 1px solid #32465a;
+
+                .el-radio-button__inner {
+                    width: 64px;
+                    height: 20px;
+                    font-size: 10.5px;
+                    line-height: .7;
+                    padding: 5px 0 5px 0;
+                    border-radius: 0;
+                    color: #32465a;
+                    border: none;
+
+                    &:hover {
+                        background-color: #CCDDEE;
+                    }
+                }
+
+                .el-radio-button__orig-radio:checked+.el-radio-button__inner {
+                    color: #fff;
+                    background-color: #32465a;
+                    border-color: #32465a;
+                }
+            }
+        }
+
+        .footBtn {
+            margin-top: 8px;
+            text-align: left;
+
+            .copy {
+                float: right;
+            }
+        }
+
+    }
+}
+
+
+// 树样式
+.treeScroll {
+    width: 100%;
+    // height: 297px;
+    flex: 1 1 auto;
+    overflow: auto;
+    box-sizing: border-box;
+    border: 1px solid #32465a;
+    padding-top: 8px;
+}
+
+.treeContainer {
+    width: 100%;
+    height: 100%;
+    line-height: 1;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+#MoveAndCopy @{deep} .treeContainer .tree {
+    overflow: hidden;
+
+    >.el-tree-node {
+        &:after {
+            border-top: 0px solid #999999;
+        }
+    }
+}
+
+.el-tree {
+    display: inline-block;
+}
+
+.tree @{deep} .renderContent {
+    position: relative;
+    width: 99%;
+    height: 31px;
+    line-height: 1.7;
+    margin-left: -6px;
+    cursor: default;
+}
+
+childIcon-hr,
+.tree @{deep} .childIcon-hr {
+    display: inline-block;
+    width: 9px;
+    height: 1px;
+    background-color: #999999;
+    background-size: auto;
+    background-repeat: no-repeat;
+    margin: auto;
+    position: absolute;
+    top: 0px;
+    left: 5.7px;
+    bottom: 0;
+    border: 0px #999999;
+}
+
+.childIcon,
+.tree @{deep} .childIcon {
+    display: inline-block;
+    width: 20px;
+    height: 15.517px;
+    background: url("@{imgurl}/file-tree-icon-12.svg");
+    background-size: auto;
+    background-repeat: no-repeat;
+    margin: auto;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    bottom: 0;
+    margin-left: 5px;
+}
+
+.tree @{deep} .childLabel {
+    margin-left: 28px;
+    margin-top: 0px;
+    font-size: 12px;
+    display: inline-block;
+    color: #333333;
+    height: 100%;
+    line-height: 28px;
+}
+
+.tree @{deep} .el-tree-node__content {
+    height: 31px;
+    position: relative;
+    padding: 0px;
+}
+
+.tree @{deep} .el-tree-node__content:hover,
+.tree @{deep} .el-tree-node__content:focus {
+    background-color: #ddeeff;
+}
+
+.tree @{deep} .el-tree-node__content:active {
+    background-color: #ccddee;
+}
+
+.tree @{deep} span.expanded.el-tree-node__expand-icon.el-icon-caret-right,
+.tree @{deep} span.el-tree-node__expand-icon.el-icon-caret-right {
+    font-size: 12px;
+    width: 5px;
+    height: 4px;
+}
+
+.tree @{deep} .el-tree-node__expand-icon:before {
+    content: "";
+}
+
+/* .tree @{deep} label.el-checkbox {
+  margin-left: 36px;
+  margin-right: -57px;
+} */
+.tree @{deep} .el-tree-node__expand-icon {
+    display: inline-block;
+    background: url("@{imgurl}/file-tree-noexpanded-11.svg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    z-index: 999;
+    padding: 6px;
+    margin-right: 5px;
+}
+
+.tree @{deep} .expanded.el-tree-node__expand-icon {
+    background: url("@{imgurl}/file-tree-expanded-10.svg");
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+.tree @{deep} .el-tree-node__loading-icon {
+    display: none;
+}
+
+.tree @{deep} .is-leaf {
+    display: none;
+}
+
+/* tree连接线 */
+.tree @{deep} .el-tree>.el-tree-node:after {
+    border-top: none;
+}
+
+.tree @{deep} .el-tree-node {
+    position: relative;
+    padding-left: 12px;
+    /* border-bottom: 1px solid #e6e6e6; */
+}
+
+.tree @{deep} .el-tree-node__children {
+    padding-left: 20px;
+}
+
+.tree @{deep} .el-tree-node :last-child:before {
+    height: 41px;
+}
+
+.tree @{deep} .el-tree>.el-tree-node:before {
+    border-left: none;
+}
+
+@{deep} .el-tree>.el-tree-node:after {
+    border-top: none;
+}
+
+// .tree @{deep} .el-tree-node:before {
+//     content: "";
+//     // left: -4px;
+//     position: absolute;
+//     right: auto;
+//     border-width: 1px;
+// }
+
+/* .tree @{deep} .el-tree-node:after {
+    content: "";
+    // left: -4px;
+    position: absolute;
+    right: auto;
+    border-width: 1px;
+} */
+
+.tree @{deep} .el-tree-node:before {
+    content: "";
+    /* left: -4px; */
+    position: absolute;
+    right: auto;
+    border-width: 1px;
+    border-left: 1px solid #999999;
+    bottom: 0px;
+    height: 100%;
+    top: -26px;
+    width: 1px;
+    left: -12px;
+}
+
+.tree @{deep} .el-tree-node:after {
+    content: "";
+    position: absolute;
+    right: auto;
+    border-width: 1px;
+    border-top: 1px solid #999999;
+    height: 20px;
+    top: 15px;
+    width: 24px;
+    left: -12px;
+}
+
+.tree @{deep} .el-tree-node.is-current.is-focusable {
+    // background-color: #ccddee;
+
+    >.el-tree-node__content {
+        background-color: #ccddee;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+        >.el-tree-node__content {
+            background-color: #ccddee;
+        }
+    }
+}

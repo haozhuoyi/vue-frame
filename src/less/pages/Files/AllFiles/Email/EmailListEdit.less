@@ -1,0 +1,402 @@
+@deep: ~">>>";
+
+.dialog @{deep} .el-dialog {
+    width: 933.5px;
+    height: 100%;
+    border: 0px;
+
+    &.largeDialog {
+        height: 100%;
+    }
+
+    .el-dialog__body {
+        height: 100%;
+        border: 0px;
+        overflow: hidden;
+        box-sizing: border-box;
+    }
+}
+
+
+/*自定義様式 */
+.borderBox {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border: 1px solid #999999;
+    box-sizing: border-box;
+    padding: 0px;
+}
+
+.select {
+    margin-top: 8px;
+    margin-bottom: 8px;
+
+    @{deep} .el-select {
+        width: 219px;
+    }
+
+    @{deep} .el-input--suffix .el-input__inner {
+        height: 37px;
+        line-height: 37px;
+        padding: 8px;
+        border-radius: 4px;
+        border: 1px solid #32465A;
+    }
+
+    @{deep} .el-input__icon {
+        height: 37px;
+        line-height: 37px;
+        color: #32465A;
+        font-weight: bold;
+        font-size: 16px;
+    }
+}
+
+
+/* 追加と削除 */
+.operationImage {
+    width: 61px;
+    height: calc(~"100% - 156px");
+    position: absolute;
+    top: 142px;
+    left: 384px;
+    right: 0;
+    margin: 0 16px;
+    padding-top: 15vh;
+
+    @{deep} #headButtons {
+        .headButton {
+            img {
+                width: 40px;
+                height: 40px;
+            }
+        }
+    }
+}
+
+/* 登録メンバー */
+.spanSendAddress {
+    margin-left: 10px;
+    color: #999999;
+}
+
+/* 新規メーリングリスト: タイトル */
+.addMailTitle {
+    /* すべての宛先 */
+    font-size: 14px;
+    color: #333333;
+    margin: 16.7px 0 15.5px 49.5px;
+
+    input {
+        width: 328px;
+        height: 37px;
+        padding: 8px;
+        line-height: 37px;
+        border-radius: 2px;
+        box-sizing: border-box;
+        border: 1px solid #32465A;
+        vertical-align: middle;
+        font-size: 0.875rem;
+    }
+
+    .filterItem {
+        vertical-align: middle;
+
+        &,
+        .listRow,
+        .customNav {
+            width: 330px;
+            height: 24px;
+            display: inline-block;
+
+            .customName {
+                width: 110px;
+                color: #1a1a1a;
+                height: 24px;
+                line-height: 22px;
+                display: inline-block;
+                overflow: hidden;
+                font-size: 12px;
+                background: #fff;
+                border-radius: 4px;
+                text-align: center;
+                position: relative;
+                opacity: 1;
+                border: 1px solid #32465A;
+                box-sizing: border-box;
+
+                &:hover {
+                    background-color: #CCDDEE;
+                }
+            }
+
+            .active {
+                background: #32465A;
+                color: #fff;
+
+                &:hover {
+                    background-color: #32465A;
+                }
+            }
+        }
+    }
+}
+
+/* すべての宛先 */
+.allOrMailingList {
+    width: 333px;
+    height: calc(~"100% - 71px");
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    overflow-x: hidden;
+    margin-top: 47px;
+    margin-left: 29.5px;
+
+    /* 头部 */
+    .liHead {
+        width: 37%;
+        height: 24px;
+        font-size: 12px;
+        line-height: 24px;
+        color: #333333;
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        box-sizing: border-box;
+        padding-left: 8px;
+
+        &.li {
+            width: 40%;
+            height: 40px;
+            line-height: 40px;
+            display: inline-block;
+            position: relative;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            cursor: default;
+
+            .backgroundColor {
+                width: 14px;
+                height: 14px;
+                border-radius: 90px;
+                position: absolute;
+                margin: auto;
+                top: 0;
+                bottom: 0;
+                left: 22px;
+                border: 1px solid #707070;
+            }
+
+            span {
+                width: 170px;
+                height: 19px;
+                line-height: 19px;
+                position: relative;
+                font-size: 14px;
+                font-weight: initial;
+                display: inline-block;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+
+            img {
+                width: 16px;
+                position: absolute;
+                margin: auto;
+                top: 0;
+                left: 8px;
+                right: auto;
+                bottom: 0;
+                height: 20.79px;
+            }
+        }
+
+        &.wo.border {
+            width: 60%;
+            margin-left: 8px;
+            border-bottom: 1px solid #999999;
+        }
+
+        &.wo.li {
+            width: 60%;
+        }
+    }
+
+    .tableUserAddress {
+        height: calc(~"100% - 56px");
+
+        /* 内容 */
+        .ulBody {
+            height: calc(~"100% - 24px");
+            overflow-x: hidden;
+            overflow-y: auto;
+            margin-top: -1px;
+
+            >:first-child {
+                margin-top: 4px;
+            }
+
+            >li {
+                border-bottom: 1px solid #F0F0F0;
+
+                >.liHead {
+                    &.li {
+                        cursor: default;
+                    }
+                }
+
+                &:hover {
+                    background-color: #ddeeff;
+                    box-shadow: 2px 2px 2px rgba(0, 0, 0, .3);
+                    border-bottom: none
+                }
+
+                &:focus,
+                &:active {
+                    background-color: #ccddee;
+                }
+
+                &.sendUser {
+                    background-color: #ccddee;
+
+                    >li:hover {
+                        background-color: #ccddee;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* 登録メンバー */
+.divSendAddress {
+    width: 390px;
+    // height: calc(~"100% - 79px");
+    height: calc(~"100% - 105px");
+    overflow-x: hidden;
+    position: absolute;
+    // top: 17px;
+    // top: 43px;
+    top: 62px;
+    right: 20px;
+    margin-top: 47px;
+
+    /* 头部 */
+    .liHead {
+        width: 33%;
+        height: 24px;
+        font-size: 12px;
+        line-height: 24px;
+        color: #333333;
+        padding-left: 0px;
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        box-sizing: border-box;
+        padding-left: 8px;
+
+        &.li {
+            width: 40%;
+            height: 40px;
+            line-height: 40px;
+            display: inline-block;
+            position: relative;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+
+            .backgroundColor {
+                width: 14px;
+                height: 14px;
+                border-radius: 90px;
+                position: absolute;
+                margin: auto;
+                top: 0;
+                bottom: 0;
+                left: 22px;
+                border: 1px solid #707070;
+            }
+
+            span {
+                width: 146px;
+                height: 19px;
+                line-height: 19px;
+                position: relative;
+                font-size: 14px;
+                font-weight: initial;
+                display: inline-block;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+
+            img {
+                width: 16px;
+                position: absolute;
+                margin: auto;
+                top: 0;
+                left: 8px;
+                right: auto;
+                bottom: 0;
+                height: 20.79px;
+            }
+        }
+
+        &.wo.border {
+            width: 60%;
+            border-bottom: 1px solid #999999;
+        }
+
+        &.wo.li {
+            width: 60%;
+        }
+    }
+
+    .tableSendAddress {
+        height: calc(~"100% - 21px");
+
+        /* 内容 */
+        .ulBody {
+            height: calc(~"100% - 24px");
+            overflow-x: hidden;
+            overflow-y: auto;
+            margin-top: -1px;
+
+            >:first-child {
+                margin-top: 4px;
+            }
+
+            >li {
+                border-bottom: 1px solid #F0F0F0;
+
+                &:hover {
+                    background-color: #ddeeff;
+                    box-shadow: 2px 2px 2px rgba(0, 0, 0, .3);
+                    border-bottom: none
+                }
+
+                &:focus,
+                &:active {
+                    background-color: #ccddee;
+                }
+
+                &.sendUserRegistered {
+                    background-color: #ccddee;
+
+                    >li:hover {
+                        background-color: #ccddee;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.el-select-dropdown__item {
+    width: 219px;
+}

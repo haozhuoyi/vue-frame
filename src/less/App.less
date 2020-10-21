@@ -1,0 +1,290 @@
+.disabled {
+    color: #C0C4CC;
+    border-color: #E4E7ED;
+    background-color: #F5F7FA;
+    cursor: not-allowed;
+}
+
+#app {
+    width: 100%;
+    height: 100%;
+    min-width: 1024px;
+    min-height: 600px;
+    overflow: hidden;
+    position: relative;
+
+    >.el-loading-mask {
+        z-index: 40000;
+    }
+}
+
+.icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+input,
+.el-input .el-input__inner {
+    height: auto;
+    line-height: 1.5;
+    padding: 4px 8px;
+    border-radius: 4px;
+    border: 1px solid #32465a;
+    background-color: #ffffff;
+    font-size: 0.875rem;
+    color: #333333;
+    box-sizing: border-box;
+}
+
+.el-input__prefix {
+    img {
+        width: 20px;
+        height: 20px;
+        margin-top: 6px;
+    }
+}
+
+input:disabled {
+    color: #C0C4CC;
+    border-color: #E4E7ED;
+    background-color: #F5F7FA;
+    cursor: not-allowed;
+}
+
+.el-button.el-color-dropdown__link-btn.el-button--text.el-button--mini {
+    padding: 4px 8px;
+
+    span {
+        font-size: 0.875rem;
+        color: #32465a;
+    }
+}
+
+.el-button.el-color-dropdown__btn.el-button--default.el-button--mini.is-plain {
+    display: inline-block;
+    line-height: 1;
+    white-space: nowrap;
+    cursor: pointer;
+    background: #FFF;
+    border: 1px solid #32465A;
+    color: #32465A;
+    text-align: center;
+    box-sizing: border-box;
+    outline: 0;
+    margin: 0;
+    transition: .1s;
+    padding: 7px 15px;
+    border-radius: 3px;
+    margin-left: 10px;
+
+    span {
+        font-size: 0.875rem;
+        color: #32465a;
+    }
+}
+
+/* dialog */
+.el-dialog__wrapper {
+    overflow: hidden;
+
+    .el-dialog {
+        width: auto;
+        height: auto;
+        min-width: 400px;
+        min-height: 184px;
+        max-width: 1440px;
+        max-height: 90%;
+        display: flex;
+        flex-direction: column;
+        margin: 0 !important;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        overflow: hidden;
+        border-radius: 4px;
+
+        .el-dialog__header {
+            padding: 8px;
+            margin: -1px 0;
+            position: relative;
+            background-color: #32465a;
+            box-sizing: border-box;
+            border-radius: 4px 4px 0px 0px;
+        }
+
+        .el-dialog__title {
+            font-size: 0.875rem;
+            color: #ffffff;
+            line-height: 1.5;
+        }
+
+        .el-dialog__headerbtn {
+            bottom: 0;
+            top: 0;
+            right: 0;
+            padding: 0 8px;
+        }
+
+        .el-dialog__close.el-icon.el-icon-close {
+            color: #fff;
+            font-weight: bold;
+            font-size: 1rem;
+        }
+
+        .el-dialog__body {
+            min-height: 66px;
+            padding: 16px;
+            padding-bottom: 8px;
+            font-size: 0.875rem;
+            background-color: #fff;
+        }
+
+        .el-dialog__footer {
+            padding: 16px;
+            margin-top: 8px;
+            background-color: #fff;
+        }
+    }
+}
+
+/* layout */
+.el-container.is-vertical {
+    height: 100%;
+}
+
+.el-header {
+    overflow: hidden;
+}
+
+.el-main {
+    height: 100%;
+}
+
+.el-radio-button__inner {
+    transition: none;
+}
+
+.el-tree__empty-block,
+.el-popper[x-placement^=bottom] .popper__arrow,
+.el-table__empty-text,
+.vxe-table .vxe-table--empty-content {
+    display: none;
+}
+
+li,
+.userDropdown,
+.el-radio-button__inner,
+.el-dropdown-menu__item {
+    user-select: none;
+}
+
+/* Button */
+.button {
+    min-width: 120px;
+    height: 32px;
+    line-height: 1.5;
+    padding: 0 8px;
+    background-color: #FFF;
+    border: 1px solid #32465A;
+    border-radius: 4px;
+    color: #32465A;
+    font-size: 0.875rem;
+    cursor: pointer;
+    user-select: none;
+
+    &:hover {
+        color: #fff;
+        background-color: #32465A;
+    }
+
+    &:active {
+        color: #fff;
+        background-color: #1F2B37;
+    }
+
+    &.buttonHighlight {
+        color: #D61918;
+        border: 1px solid #D61918;
+
+        &:hover {
+            color: #fff;
+            background-color: #D61918;
+        }
+
+        &:active {
+            color: #fff;
+            background-color: #A41313;
+        }
+    }
+
+    &.buttonDelete {
+        color: #fff;
+        border: 1px solid #D61918;
+        background-color: #D61918;
+
+        &:hover {
+            color: #fff;
+            background-color: #EC6363;
+        }
+
+        &:active {
+            color: #fff;
+            background-color: #A41313;
+        }
+    }
+
+    &.margin {
+        margin-left: 10px;
+    }
+
+    &.disabled,
+    &.buttonHighlight.disabled,
+    &.buttonDelete.disabled {
+        .disabled()
+    }
+}
+
+/* contextmenu */
+.v-contextmenu.v-contextmenu--default {
+    padding: 0;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, .4);
+    border-radius: 0px;
+
+    .v-contextmenu-item {
+        line-height: 1.5;
+        user-select: none;
+
+        &.v-contextmenu-item--hover {
+            color: #333;
+            background-color: #ddeeff;
+
+            &:active {
+                color: #333;
+                background-color: #ccddee;
+            }
+        }
+
+        .v-contextmenu-submenu__title {
+            margin-right: 10px;
+            font-size: 0.875rem;
+            color: #333;
+
+            [class*=" el-icon-"],
+            [class^=el-icon-] {
+                margin-top: 4px;
+            }
+        }
+    }
+}

@@ -1,0 +1,96 @@
+.chx-layout1 {
+    height: 100%;
+
+    .el-header {
+        padding: 0;
+
+        .header {
+            border-bottom: 2px solid #789;
+        }
+
+        .toolbar {
+            border-bottom: 1px solid #789;
+        }
+    }
+
+    .body {
+        height: calc(~'100vh - 75px');
+        position: relative;
+
+        .main {
+            padding: 0px;
+        }
+
+        .navbar {
+            border-right: 2px solid #789;
+            background-color: #FFFFFF;
+            position: absolute;
+            height: 100%;
+        }
+
+        .list{
+            left:56px;
+        }
+
+    }
+
+    .main {
+        position: relative;
+    }
+
+    .list {
+        position: absolute;
+        height: 100%;
+        left: 0;
+        top: 0;
+    }
+
+    .detail {
+        position: absolute;
+        height: 100%;
+        top: 0;
+        right: 0;
+    }
+}
+
+.list-enter-active,
+.list-leave-active {
+    transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    /* Firefox 4 */
+    -webkit-transition: all 0.3s linear;
+    /* Safari and Chrome */
+    -o-transition: all 0.3s linear;
+    /* Opera */
+    transform: translateX(0%);
+}
+
+.list-enter,
+.list-leave {
+    transform: translateX(-100%);
+}
+
+.list-leave-to {
+    transform: translateX(-100%);
+}
+
+.detail-enter-active,
+.detail-leave-active {
+    transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    /* Firefox 4 */
+    -webkit-transition: all 0.3s linear;
+    /* Safari and Chrome */
+    -o-transition: all 0.3s linear;
+    /* Opera */
+    transform: translateX(0%);
+}
+
+.detail-enter,
+.detail-leave {
+    transform: translateX(100%);
+}
+
+.detail-leave-to {
+    transform: translateX(100%);
+}

@@ -1,0 +1,82 @@
+@deep: ~">>>";
+
+/* dialog对话框的样式 */
+
+.snapShot {
+    font-size: 12px;
+    font-family: "YuGo-Medium";
+}
+
+.snapShot @{deep} .el-dialog__close.el-icon.el-icon-close {
+    margin-right: 0px;
+}
+
+.snapShot @{deep} .el-dialog__header {
+    padding: 3.5px 0px 3.5px 8px;
+    background-color: #32465a;
+}
+
+.snapShot @{deep} .el-dialog__body {
+    border: 0px;
+}
+
+.snapShot @{deep} .el-dialog__title {
+    color: white;
+    font-size: 0.875rem;
+    line-height: 24px;
+}
+
+
+/* フォームの様式 */
+.formSnapShot {
+    margin-left: -15px;
+}
+
+.formSnapShot @{deep} .el-form-item {
+    margin: 0px;
+}
+
+.formSnapShot @{deep} .el-form-item__content {
+    line-height: 28px;
+    padding-left: 6px;
+}
+
+.formSnapShot @{deep} .el-form-item__label {
+    font-size: 0.875rem;
+    line-height: 26px;
+    padding: 0px 6px 0 0;
+}
+
+.formSnapShot @{deep} .el-radio-button>span {
+    border-radius: 2px;
+}
+
+.formSnapShot @{deep} .el-radio-button__inner {
+    height: 28px;
+    width: 65px;
+    font-size: 0.875rem;
+    padding: 5px 3px 5px 3px;
+    margin-left: -2px;
+    margin-bottom: 5px;
+    border-radius: 0;
+    border: 1px solid #32465a;
+}
+
+.longButton @{deep} .el-radio-button__inner {
+    width: 138px;
+}
+
+.formSnapShot @{deep} .el-radio-group {
+    margin-left: -11px;
+}
+
+.formSnapShot @{deep} .el-radio-button__orig-radio:checked+.el-radio-button__inner {
+    background-color: #32465a;
+    box-shadow: -1px 0 0 0 white;
+    -webkit-box-shadow: -1px 0 0 0 white;
+}
+
+.formSnapShot @{deep} .el-radio-button__inner:hover {
+    color: #333;
+    background-color: #CCDDEE;
+}

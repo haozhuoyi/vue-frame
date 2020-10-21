@@ -1,0 +1,209 @@
+@deep: ~">>>";
+@imgurl: "../../../../../assets/images/email";
+
+/* dialog様式 */
+.dialog @{deep} .el-dialog {
+    min-width: 765px;
+    height: 100%;
+    border: 0px;
+
+    &.largeDialog {
+        min-width: 765px;
+        height: 100%;
+    }
+}
+
+/* 自定義様式 */
+.mailBody {
+    height: 100%;
+    overflow: auto;
+    padding: 16px;
+    box-sizing: border-box;
+    border: 1px solid #999999;
+
+    .users {
+        margin-bottom: 4px;
+        padding-bottom: 4px;
+        border-bottom: 1px solid #32465a;
+
+        .userTitle,
+        .userContent {
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .userTitle {
+            width: 64px;
+            text-align: right;
+        }
+
+        .userContent {
+            width: 83%;
+            height: 100%;
+        }
+
+        .adding {
+            width: 32px;
+            height: 32px;
+            margin-left: 18px;
+            cursor: pointer;
+            vertical-align: middle;
+        }
+    }
+
+    /* Form様式 */
+    .editMailForm @{deep} .el-form-item {
+        margin: 0px;
+        margin-bottom: 4px;
+    }
+
+    .editMailForm @{deep} .el-form-item__label {
+        width: 66px;
+        height: 37px;
+        line-height: 37px;
+        padding: 0px;
+        font-size: 0.875rem;
+    }
+
+    .editMailForm @{deep} .el-form-item__content {
+        line-height: 25px;
+    }
+
+    .editMailForm @{deep} .el-input {
+        width: calc(~"100% - 108px");
+        height: 37px;
+        line-height: 37px;
+        vertical-align: middle;
+    }
+
+
+    // .editMailForm @{deep} .__vuescroll {
+    .editMailForm @{deep} .testBox {
+        // border-radius: 4px;
+        // border: 1px solid #32465a;
+
+        // .__panel {
+        //     scrollbar-width: none;
+        //     -ms-overflow-style: none;
+
+        //     &::-webkit-scrollbar {
+        //         display: none;
+        //     }
+
+        // .testBox {
+        width: calc(~"100% - 108px");
+        height: 142px;
+        padding: 8px;
+        font-size: 0.875rem;
+        word-wrap: break-word;
+        display: inline-block;
+        box-sizing: border-box;
+        border-radius: 4px;
+        border: 1px solid #32465a;
+        overflow: auto;
+
+        * {
+            position: relative;
+        }
+
+        // }
+        // }
+    }
+
+    .listFileContent {
+        width: 100%;
+        height: calc(~"100% - 318px");
+        position: relative;
+
+        p {
+            font-size: 0.875rem;
+            margin-left: 8px;
+
+            .listFileContentPrompt {
+                color: #D61918;
+                margin-left: 24px;
+            }
+        }
+
+        .listFile {
+            width: calc(~"100% - 104px");
+            height: calc(~"100% - 22px");
+            display: inline-block;
+            margin-left: 66px;
+            padding-top: 3px;
+            overflow-y: auto;
+            overflow-x: hidden;
+
+            >ul {
+                margin-right: 4px;
+                position: relative;
+
+                li {
+                    height: 37px;
+                    line-height: 37px;
+                    margin-bottom: 3px;
+                    border-radius: 4px;
+                    padding-left: 13px;
+                    font-size: 0.875rem;
+                    border: 1px solid #32465a;
+                    position: relative;
+                    padding-right: 34px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+
+                    span {
+                        position: absolute;
+                        margin: auto;
+                        right: 38px;
+                    }
+
+                    .deleteFile {
+                        width: 24px;
+                        height: 24px;
+                        background: url("@{imgurl}/email-address-btn-delete.svg");
+                        background-size: auto;
+                        position: absolute;
+                        top: 6px;
+                        right: 8px;
+                    }
+                }
+            }
+        }
+
+        .addingFile {
+            background: url("@{imgurl}/email-btn-mail-adding-file.svg");
+            width: 32px;
+            height: 32px;
+            border: 0;
+            padding: 0;
+            z-index: 999;
+            font-weight: bold;
+            box-shadow: none;
+            border-radius: 0px;
+            background-size: auto;
+            background-repeat: no-repeat;
+            position: absolute;
+            right: 1px;
+            top: 175px;
+            cursor: pointer;
+        }
+    }
+
+    .buttonMailTemplates {
+        background: url("@{imgurl}/email-btn-mail-templates.svg");
+        width: 32px;
+        height: 32px;
+        font-weight: bold;
+        padding: 0;
+        right: 1px;
+        top: 53px;
+        position: absolute;
+        box-shadow: none;
+        background-size: auto;
+        background-repeat: no-repeat;
+        z-index: 999;
+        border-radius: 0px;
+        border: 0;
+    }
+}

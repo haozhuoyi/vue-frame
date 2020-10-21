@@ -1,0 +1,25 @@
+'use strict'
+
+exports.__esModule = true
+exports.default = {
+    emailListEdit: {
+        DISPLAY_MAILLING_LIST_VIEWER_TITLE: 'Mailing　List',
+        DISPLAY_MAILLING_LIST_VIEWER_SEARCH_TITLE: 'Mailing　List',
+        DISPLAY_MAILLING_LIST_VIEWER_SEARCH: 'Search',
+        DISPLAY_MAILLING_LIST_VIEWER_BUTTON_ADD: 'Add',
+        DISPLAY_MAILLING_LIST_VIEWER_BUTTON_COPY: 'Copy',
+        DISPLAY_MAILLING_LIST_VIEWER_BUTTON_EDIT: 'Edit',
+        DISPLAY_MAILLING_LIST_VIEWER_BUTTON_DELETE: 'Delete',
+        DISPLAY_MAILLING_LIST_USER_TITLE: 'User',
+        DISPLAY_MAILLING_LIST_BELONG_TITLE: 'Affiliation',
+        DISPLAY_MAILLING_LIST__PUBLIC_TYPE: 'PublicType：',
+        DISPLAY_MAILLING_LIST_VIEWER_BUTTON_ONLY_MYSELF: 'Only myself',
+        DISPLAY_MAILLING_LIST_VIEWER_BUTTON_THIS_PROJECT: 'This project',
+        DISPLAY_MAILLING_LIST_VIEWER_BUTTON_ALL_PROJECTS: 'All projects',
+        MESSAGE_CLOSE_EDIT_WINDOW_CONFIRM: 'Discard edit contents and close.\nProceed?',
+        MESSAGE_MAILLING_LIST_WARNING: 'warning',
+        MESSAGE_MAILLING_LIST_DELETE_PROCEED: 'Delete the mailing list?',
+        DISPLAY_YES: 'Yes',
+        DISPLAY_NO: 'No'
+    }
+}

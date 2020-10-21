@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <g id="矩形_207" data-name="矩形 207" fill="#fff" stroke="#32465a" stroke-miterlimit="10" stroke-width="1">
+    <rect width="20" height="20" rx="2" stroke="none"/>
+    <rect x="0.5" y="0.5" width="19" height="19" rx="1.5" fill="none"/>
+  </g>
+  <g id="组_326" data-name="组 326" transform="translate(-6969.005 -233)">
+    <g id="组_323" data-name="组 323">
+      <g id="组_322" data-name="组 322">
+        <path id="路径_275" data-name="路径 275" d="M6982.7,239.308v-1.693a.769.769,0,0,0-.769-.769h-5.846a.769.769,0,0,0-.769.769v1.693h-1.847a.615.615,0,0,0-.615.615h0a.615.615,0,0,0,.615.615h1.231v8a.617.617,0,0,0,.616.616h7.384a.616.616,0,0,0,.616-.616v-8h1.23a.616.616,0,0,0,.616-.615h0a.616.616,0,0,0-.616-.615Z" fill="#d61918" fill-rule="evenodd"/>
+        <rect id="矩形_208" data-name="矩形 208" width="4.923" height="1.231" transform="translate(6976.543 238.077)" fill="#d61918"/>
+        <rect id="矩形_209" data-name="矩形 209" width="1.231" height="5.692" transform="translate(6979.62 241.769)" fill="#d61918"/>
+        <rect id="矩形_210" data-name="矩形 210" width="1.231" height="5.692" transform="translate(6977.159 241.769)" fill="#d61918"/>
+      </g>
+    </g>
+    <g id="组_325" data-name="组 325">
+      <g id="组_324" data-name="组 324">
+        <path id="路径_276" data-name="路径 276" d="M6974.7,240.538v7.847a.77.77,0,0,0,.769.769h7.077a.77.77,0,0,0,.77-.769v-7.847Z" fill="#d61918" fill-rule="evenodd"/>
+        <rect id="矩形_211" data-name="矩形 211" width="1.231" height="5.692" transform="translate(6979.62 241.769)" fill="#d61918"/>
+        <rect id="矩形_212" data-name="矩形 212" width="1.231" height="5.692" transform="translate(6977.159 241.769)" fill="#d61918"/>
+      </g>
+    </g>
+  </g>
+</svg>

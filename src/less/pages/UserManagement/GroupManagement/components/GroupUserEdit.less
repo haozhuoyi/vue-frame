@@ -1,0 +1,87 @@
+@deep: ~">>>";
+@height: 100%;
+
+#groupUserEdit {
+    @{deep} .groupUserEditDialog {
+        .el-dialog {
+            height: 100%;
+
+            .el-dialog__body {
+
+                &.flexColumn {
+                    height: 100%;
+                    flex: 1 1 auto;
+                    display: flex;
+                    flex-direction: column;
+
+                    .title {
+                        width: 200px;
+                        font-size: 16px;
+                        padding: 0 22px;
+                        position: relative;
+                        color: #333333;
+                        margin-bottom: 8.9px;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+
+                        .backgroundColor {
+                            width: 14px;
+                            height: 14px;
+                            position: absolute;
+                            margin: auto;
+                            top: 0;
+                            bottom: 0;
+                            left: 0;
+                            border-radius: 90px;
+                            border: 1px solid #707070;
+                        }
+
+                        span {
+                            position: absolute;
+                            left: 0px;
+                            bottom: -24px;
+                            font-size: 14px;
+                            color: #333333;
+                        }
+                    }
+
+                    .flexRow {
+                        display: flex;
+                        flex-direction: row;
+
+                        &.stretchContent {
+                            height: calc(~"100% - 24px");
+                            flex: 1 1 auto;
+                            overflow-y: auto;
+
+                            .layoutThree {
+                                // display: inline-block;
+                                // vertical-align: middle;
+                                display: flex;
+                                flex-direction: column;
+                            }
+
+                            .centerContent {
+                                align-self: center;
+                                margin: 0 16px;
+
+                                >.headButtons {
+                                    flex-direction: column;
+
+                                    /* @{deep} */
+                                    >.headButton {
+                                        img {
+                                            width: 40px;
+                                            height: 40px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

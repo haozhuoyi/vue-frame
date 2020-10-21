@@ -1,0 +1,30 @@
+@deep: ~">>>";
+
+#fileDrawer {
+    width: 100%;
+    height: calc(~"100% - 16px");
+    background-color: #ffffff;
+    border-radius: 2px 2px;
+
+    @{deep} .el-tabs__nav.is-top.is-stretch {
+        border-bottom: 1px solid #707070;
+
+        .el-tabs__item{
+            &.is-top {
+                font-size: 11px;
+                font-family: "YuGo-Bold";
+                padding: 0 5px;
+                color: #2d2d3c;
+            }
+            &.is-active {
+                color: #2d2d3c;
+            }
+        }
+
+        .el-tabs__active-bar.is-top {
+            height: 3px;
+            background-color: #d61918;
+        }
+    }
+}
+

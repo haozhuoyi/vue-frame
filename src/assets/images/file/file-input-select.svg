@@ -1,0 +1,12 @@
+<svg width="13" height="13" xmlns="http://www.w3.org/2000/svg">
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="10.387045" width="9.738017" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <path fill-rule="evenodd" fill="#2d2d3c" d="m13,12a1,1 0 0 0 -0.289,-0.7l-2.68,-2.68a5.5,5.5 0 1 0 -1.414,1.414l2.68,2.672a0.978,0.978 0 0 0 0.7,0.3a1.007,1.007 0 0 0 1.003,-1.006z" id="路径_2232"/>
+  <circle fill="#2d2d3c" r="3.5" cy="5.5" cx="5.5" id="椭圆_438"/>
+ </g>
+</svg>

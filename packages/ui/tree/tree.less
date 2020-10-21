@@ -1,0 +1,230 @@
+@import '../../assets/less/common.less';
+@deep: ~">>>";
+@imgurl: '../../assets/icons/svg/chex/file/';
+
+.chxtree{
+    /* 第一层 线隐藏 */
+    @{deep} > .el-tree-node:before{
+        display: none;
+    }
+    @{deep} > .el-tree-node:after{
+        display: none;
+    }
+    /* 第一层 加减符号 隐藏 */
+    @{deep} > .el-tree-node>.el-tree-node__content>.chxtree_expand_icon{
+        display: none;
+    }
+
+
+    @{deep} .renderContent {
+        position: relative;
+        width: 99%;
+        height: 31px;
+        line-height: 1.7;
+        margin-left: 0px;
+        cursor: default;
+    }
+
+    .childIcon,
+    @{deep} .childIcon {
+        display: inline-block;
+        width: 20px;
+        background: url("@{imgurl}file-tree-icon-12.svg");
+        background-size: auto;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin: auto;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        bottom: 0;
+    }
+
+    @{deep} .childLabel {
+        margin-left: 28px;
+        margin-top: 0px;
+        display: inline-block;
+        color: #333333;
+        height: 100%;
+        line-height: 31px;
+        font-size: 0.875rem;
+    }
+
+    @{deep} .el-tree-node__content {
+        height: 31px;
+        position: relative;
+
+        &.conceal {
+            display: none;
+        }
+    }
+
+    @{deep} span.expanded.el-tree-node__expand-icon.el-icon-caret-right,
+    @{deep} span.el-tree-node__expand-icon.el-icon-caret-right {
+        font-size: 12px;
+        width: 5px;
+        height: 5px;
+        margin-right: 10px;
+        margin-left:-27px;
+    }
+
+    @{deep} .el-tree-node__expand-icon:before {
+        content: "";
+    }
+
+    @{deep} .chxtree_expand_icon{
+        font-size: 12px;
+        width: 6px;
+        height: 6px;
+        margin-right: 10px;
+        margin-left:-27px;
+        background: url("@{imgurl}file-tree-noexpanded-11.svg") no-repeat;
+        background-color:white;
+        display: inline-block;
+        z-index: 10;
+        background-size: 100% 100%;
+        filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='@{imgurl}file-tree-noexpanded-11.svg', sizingMethod='scale');
+    }
+
+    @{deep} .expanded.chxtree_expand_icon{
+        font-size: 12px;
+        width: 6px;
+        height: 6px;
+        margin-right: 10px;
+        margin-left:-27px;
+        display: inline-block;
+        background: url("@{imgurl}file-tree-expanded-10.svg") no-repeat;
+        background-color:white;
+        z-index: 10;
+        background-size: 100% 100%;
+        filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='@{imgurl}file-tree-expanded-10.svg', sizingMethod='scale');
+    }
+
+    // @{deep} .el-tree-node__expand-icon {
+    //     display: inline-block;
+    //     background: url("@{imgurl}file-tree-noexpanded-11.svg") no-repeat;
+    //     background-color:white;
+    //     z-index: 999;
+    //     background-size: 100% 100%;
+    //     filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='@{imgurl}file-tree-noexpanded-11.svg', sizingMethod='scale');
+    // }
+
+    // @{deep} .expanded.el-tree-node__expand-icon {
+    //     display: inline-block;
+    //     background: url("@{imgurl}file-tree-expanded-10.svg") no-repeat;
+    //     background-color:white;
+    //     z-index: 999;
+    //     background-size: 100% 100%;
+    //     filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='@{imgurl}file-tree-expanded-10.svg', sizingMethod='scale');
+    // }
+
+    @{deep} .el-tree-node__loading-icon {
+        // display: none;
+        margin-left: -24px;
+        z-index: 20;
+        background-color: white;
+        font-size: 10px;
+        position: absolute;
+        display: flex;
+
+    }
+
+    @{deep} .is-leaf {
+        display: none;
+    }
+
+    /* tree连接线 */
+    @{deep} .el-tree>.el-tree-node:after {
+        border-top: none;
+    }
+
+    @{deep} .el-tree-node {
+        position: relative;
+        padding: 0 10px;
+    }
+
+    @{deep} .el-tree-node__children {
+        padding-left: 19px;
+    }
+
+    @{deep} .el-tree-node :last-child:before {
+        height: 41px;
+    }
+
+    @{deep} .el-tree>.el-tree-node:before {
+        border-left: none;
+
+        &:first-child {
+            top: 1px;
+        }
+    }
+
+    .treeContainer @{deep} .el-tree>.el-tree-node:after {
+        border-top: none;
+    }
+
+    // @{deep} .el-tree-node:before {
+    //     content: "";
+    //     left: -4px;
+    //     position: absolute;
+    //     right: auto;
+    //     border-width: 1px;
+    // }
+
+    // @{deep} .el-tree-node:after {
+    //     content: "";
+    //     left: -4px;
+    //     position: absolute;
+    //     right: auto;
+    //     border-width: 1px;
+    // }
+
+    @{deep} .el-tree-node:before {
+        content: "";
+        position: absolute;
+        right: auto;
+        border-width: 1px;
+        border-left: 1px solid #999999;
+        bottom: 0px;
+        height: 100%;
+        top: -26px;
+        width: 1px;
+        left: -10px;
+    }
+
+    @{deep} .el-tree-node:after {
+        content: "";
+        position: absolute;
+        right: auto;
+        border-width: 1px;
+        border-top: 1px solid #999999;
+        height: 20px;
+        top: 15px;
+        width: 19px;
+        left: -10px;
+    }
+
+    @{deep} .el-tree-node__content:hover,
+    @{deep} .el-tree-node__content:focus {
+        background-color: #ddeeff;
+    }
+
+    @{deep} .el-tree-node__content:active {
+        background-color: #ccddee;
+    }
+
+    @{deep} .el-tree-node.is-current.is-focusable {
+        >.el-tree-node__content {
+            background-color: #ccddee;
+        }
+
+        &:hover,
+        &:focus,
+        &:active {
+            >.el-tree-node__content {
+                background-color: #ccddee;
+            }
+        }
+    }
+}
+

@@ -1,0 +1,12 @@
+<svg viewBox="0 0 16 16" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <path fill="#999" d="m13.999998,1.000029a1,1 0 0 1 1,1l0,12a1,1 0 0 1 -1,1l-12,0a1,1 0 0 1 -1,-1l0,-12a1,1 0 0 1 1,-1l12,0m0,-1l-12,0a2,2 0 0 0 -2,2l0,12a2,2 0 0 0 2,2l12,0a2,2 0 0 0 2,-2l0,-12a2,2 0 0 0 -2,-2" id="路径_791"/>
+  <rect x="8.711" y="4.036" fill="#999" transform="rotate(90 8.711000442504885,4.035999774932862) " height="2" width="8" id="矩形_447"/>
+ </g>
+</svg>

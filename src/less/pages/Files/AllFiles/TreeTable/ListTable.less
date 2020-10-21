@@ -1,0 +1,100 @@
+@deep: ~">>>";
+
+#listtable,
+#AllFilesListTable {
+    width: calc(~"100% - 18px");
+    height: calc(~"100% - 3px");
+
+    /deep/ .el-table {
+
+        .el-table__header-wrapper {
+            margin: 0;
+
+            .cell {
+                height: 22px;
+                font-size: .75rem;
+                color: #333;
+                -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+                line-height: 22px;
+            }
+        }
+
+        .el-table__body {
+
+            .el-table__row {
+
+                &:focus,
+                &:active,
+                &:hover {
+
+                    td .cell img.imghover {
+                        display: inline-block;
+                    }
+
+                    td .cell div.icon {
+                        margin: 0 6px;
+                    }
+                }
+
+                .center {
+                    text-align: center;
+                }
+
+                td {
+                    padding: 8px 0;
+                    border-bottom: 1px solid #f0f0f0;
+
+                    .cell {
+                        height: 24px;
+                        line-height: 24px;
+                        padding-right: 16px;
+                        font-size: .875rem;
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+
+                        .qrInfo,
+                        .memoFlg,
+                        .contentsFlg,
+                        .xlsFlg {
+                            width: 88px;
+                            height: 18px;
+
+                            img {
+                                width: 18px;
+                                height: 18px;
+                                vertical-align: middle;
+                            }
+                        }
+
+                        .icon {
+                            width: 24px;
+                            height: 24px;
+                            margin: 0 6px 0 30px;
+                            display: inline-block;
+                            position: relative;
+
+                            img {
+                                width: 24px;
+                                height: 24px;
+                            }
+                        }
+
+                        span {
+                            vertical-align: top;
+                        }
+
+                        .imghover {
+                            width: 24px;
+                            height: 24px;
+                            display: none;
+                            background-color: white;
+                            border-radius: 13%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

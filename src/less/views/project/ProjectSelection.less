@@ -1,0 +1,104 @@
+@deep: ~">>>";
+
+.append @{deep} .el-form-item__label {
+    color: #333333;
+    font-size: 1rem;
+    padding: 0;
+}
+
+.append @{deep} .el-form-item__content,
+.append @{deep} .el-form-item__label {
+    height: 30px;
+    line-height: 30px;
+    padding-right: 8px;
+    vertical-align: middle;
+}
+
+.append @{deep} .el-form-item {
+    margin-bottom: 8px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+/* 添加项目 */
+.appendProject @{deep} .appendProjectForm {
+    margin: 16px;
+}
+
+.elementuiDialog .appendProject,
+.appendProject @{deep} .addButton {
+    text-align: right;
+}
+
+// .elementuiDialog @{deep} .el-dialog__body {
+//     height: 372px;
+// }
+
+.elementuiDialog @{deep} .el-dialog__wrapper {
+    min-width: 1024px;
+    min-height: 600px;
+    overflow: hidden;
+}
+
+.projectList {
+    height: 314px;
+    margin-top: 8px;
+    margin-bottom: 16px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    border: 1px solid #999999;
+    border-radius: 4px;
+    background-color: #f0f0f0;
+
+    @{deep} .drag {
+        width: 398px;
+        height: 32px;
+        line-height: 32px;
+        padding-left: 8px;
+        box-sizing: border-box;
+        background-color: #fff;
+        margin-bottom: 1px;
+        user-select: none;
+
+        &:hover {
+            cursor: default;
+            background-color: #ddeeff;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &.hoverClick{
+            background-color: #ccddee;
+
+            &:hover {
+                cursor: default;
+                background-color: #ccddee;
+            }
+        }
+
+        .operationIcon {
+            width: 64px;
+            height: 32px;
+            line-height: 32px;
+            float: right;
+            text-align: end;
+            position: relative;
+
+            svg:first-child {
+                cursor: pointer;
+            }
+            svg:last-child{
+                cursor: move;
+            }
+
+            .dragIcon {
+                margin: 7px 8px;
+                float: right;
+            }
+        }
+    }
+}

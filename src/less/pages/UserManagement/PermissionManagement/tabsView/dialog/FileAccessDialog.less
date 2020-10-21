@@ -1,0 +1,92 @@
+@deep: ~">>>";
+
+.fileAccessDialog {
+    height: 100%;
+
+    @{deep} .el-dialog {
+        width: 100%;
+        height: 100%;
+
+        .el-dialog__body {
+            height: 100%;
+
+            /* body */
+            .body {
+                width: 100%;
+                height: 100%;
+                padding: 16px;
+                box-sizing: border-box;
+                border: 1px solid #999999;
+                position: relative;
+                overflow: hidden;
+
+                .title {
+                    width: 200px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    color: #333333;
+                    height: 21px;
+                    line-height: 21px;
+                    position: relative;
+                    margin-bottom: 19px;
+
+                    img {
+                        width: 18px;
+                        height: 15.52px;
+                        margin-top: 3px;
+                        vertical-align: top;
+                    }
+                }
+
+                .layoutThree {
+                    height: calc(~"100% - 41px");
+                    display: inline-block;
+                    vertical-align: middle;
+
+                    .tit {
+                        font-size: 14px;
+                        color: #666666;
+                        padding-left: 10px;
+                    }
+
+                    &.left,
+                    &.right {
+                        width: calc(~"calc(100% - 90px) / 2");
+                    }
+
+                    &.center {
+                        width: 89px;
+                        padding: 79px 16px;
+                        box-sizing: border-box;
+                        position: relative;
+
+                        >div {
+                            height: 150px;
+                            position: absolute;
+                            margin: auto;
+                            top: 0;
+                            bottom: 0;
+
+                            #headButtons {
+                                .headButton {
+                                    .buttonImage {
+                                        width: 40px;
+                                        height: 40px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .dialog-footer {
+
+            .all {
+                margin-right: 8.2px;
+            }
+        }
+    }
+}
